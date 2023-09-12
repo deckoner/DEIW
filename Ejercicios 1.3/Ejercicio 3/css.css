@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 3px solid;
+    text-align: left;
+    font-size: 40px;
+  }
