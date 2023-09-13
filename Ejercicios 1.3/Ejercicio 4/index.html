@@ -15,16 +15,82 @@
 		<main>
             <form action="#">
                 <fieldset>
-                  <legend>Datos identificativos:</legend>
-                  <label id="codSub">Codigo de suscripcion</label>
-                  <input type="text" id="fname" name="fname"><br><br>
-                  <label for="lname">Last name:</label>
-                  <input type="text" id="lname" name="lname"><br><br>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email"><br><br>
-                  <label for="birthday">Birthday:</label>
-                  <input type="date" id="birthday" name="birthday"><br><br>
-                  <input type="submit" value="Submit">
+                  <legend>Datos identificativos</legend>
+
+                  <label>Codigo de suscripcion:</label>
+                  <input type="text" id="codSub" name="codSub">
+
+                  <label>Nº Socio:</label>
+                  <input type="text" id="nSocio" name="nSocio">
+
+                  <label>Uusuario:</label>
+                  <input type="text" id="user" name="user">
+
+                  <label>Contraseña:</label>
+                  <input type="text" id="contra" name="contra">
+
+                  <label>Repite contraseña:</label>
+                  <input type="text" id="contraR" name="contraR">
+
+                  <label>Nombre Completo:</label>
+                  <input type="text" id="nombreCompleto" name="nombreCompleto">
+
+                  <label>DNI:</label>
+                  <input type="text" id="dni" name="dni">
+
+                  <label>Letra:</label>
+                  <input type="text" id="letra" name="letra">
+
+                  <label>Direccion:</label>
+                  <input type="text" id="direccion" name="direccion">
+
+                  <label>Ciudad</label>
+                  <input type="text" id="ciudad" name="ciudad">
+
+                  <label>Código postal</label>
+                  <input type="text" id="cPostal" name="cPostal">
+                  
+                  <label>Pais</label>
+                  <input type="text" id="pais" name="pais">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos Bancarios</legend>
+
+                    <input type="radio" id="visa" name="tarjeta" value="visa"/>
+                    <label for="visa">Visa</label>
+
+                    <input type="radio" id="masterCard" name="tarjeta" value="masterCard" checked />
+                    <label for="masterCard">Masterd Card</label>
+
+                    <input type="radio" id="ameriExpress" name="tarjeta" value="ameriExpress"/>
+                    <label for="ameriExpress">American Express</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Aficiones</legend>
+
+                    <input type="checkbox" id="lerr" name="lerr"/>
+                    <label for="lerr">Leer</label>
+
+                    <input type="checkbox" id="viajar" name="viajar"/>
+                    <label for="viajar">Viajar</label>
+
+                    <input type="checkbox" id="musica" name="musica"/>
+                    <label for="musica">Escuchar Musica</label>
+
+                    <input type="checkbox" id="deportes" name="deportes"/>
+                    <label for="deportes">Deportes</label>
+
+                    <input type="checkbox" id="montana" name="montana"/>
+                    <label for="montana">Montaña</label>
+
+                    <input type="checkbox" id="gameEstrategia" name="gameEstrategia"/>
+                    <label for="gameEstrategia">Juegos de Estrategia</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Enviar informaciòn</legend>
                 </fieldset>
               </form> 
         </main>
