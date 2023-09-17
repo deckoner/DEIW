@@ -1,0 +1,43 @@
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS de bloque:</h1>
+       <h2>SIN CLEAR EN LOS SIGUIENTES</h2>
+       1. DIV's se muestran uno debajo del otro:
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow">
+        CAJA1 
+        </div>
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red; float: right;">
+        CAJA2 que flota a la derecha del lugar en el que le tocaba estar. La siguiente caja rellena su hueco
+        </div>
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+        CAJA3 sin clear
+        </div>
+        2. Los p se muestran uno debajo de otro:
+        <p style="float: right"> PARRAFO1 que flota a la derecha</p>
+		<p>PARRAFO2</p>
+        <br><br><br><br><br>
+        <h2>CON CLEAR EN LOS SIGUIENTES ELEMENTOS</h2>
+        1. DIV's se muestran uno debajo del otro:
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow">
+        CAJA1 
+        </div>
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red; float: right;">
+        CAJA2 que flota a la derecha del lugar en el que le tocaba estar. La siguiente caja NO rellena su hueco,
+        </div>
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green; clear:both">
+        CAJA3 con clear
+        </div>
+        2. Los p se muestran uno debajo de otro:
+        <p style="float: right"> PARRAFO1 que flota a la derecha</p>
+		<p style="clear: right">PARRAFO2 NO Rellena</p> <!-- Probar a poner clear: left. Como no hay nada que limpiar, el flujo sigue y el p ocupa el lugar -->
+        <br>
+        
+     </body>
+</html>

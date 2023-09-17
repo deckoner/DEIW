@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+       <link rel="stylesheet" href="lastchild.css">
+    </head>
+
+    <body>
+    <header>last CHILD</header>
+    
+    <section>
+        <p>1. Prueba 
+            <em>color</em> 
+            last child
+        </p>
+    </section>
+    <!-- 
+    1. Le aplica la regla p :last-child {color: aqua;}-> El ultimo hijo dentro de un p en aqua.En este caso el em, palabra color-> Aqua
+    
+    2. Llega la regla p em:last-child {color:red;} -> El ultimo hijo dentro de p, que sea em. En este caso lo cumple-> color-> Rojo
+    
+    3. Llega la regla p em :last-child {color:rosybrown;} -> El ultimo hijo dentro de un em que está dentro de un p. Resulta que em no tiene hijo, así que no aplica.
+    
+    Finalmente color-> Rojo
+    *
+    -->
+    
+    
+    
+    
+    <section>
+        <p>2. Prueba 
+            <span>
+                <ins>
+                    <em>
+                        <small>color </small>
+                    last
+                    </em> 
+                child
+                </ins>
+            </span> 
+        </p>
+    </section>
+     <!--   
+    /*
+    1. Le aplica la regla p :last-child {color: aqua;}-> El ultimo hijo dentro de un p en aqua.En este caso todo el span: color last child -> Aqua
+    
+    2. Llega la regla p em:last-child {color:red;} -> El ultimo elemento que cumpla las condiciones de ser primer hijo y de tipo em que esté dentro de p (da igual en qué lugar sucesorio. em aquí es hijo de ins, que a su vez es de span, que a su vez es de p). En este caso color last
+    
+    3. Llega la regla p em :last-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. En este caso small que engloba sólo la palabara color.
+    
+    Finalmente color->rosybrown, last->rojo, child-> Aqua
+    
+    -->
+    
+    <section>
+        <p>3. Prueba 
+            <span>
+                <em>color </em>
+            last
+            </span> 
+        child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :last-child {color: aqua;}-> El ultimo hijo dentro de un p en aqua.En este caso todo el span: color last -> Aqua
+    
+    2. Llega la regla p em:last-child {color:red;} -> El elemento que cumpla la condicion de ser ultimo hijo dentro de p, que sea em, palabra color->Rojo
+    
+    3. Llega la regla p em :last-child {color:rosybrown;} -> El ultimo hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+    Finalmente color->rojo last-> Aqua
+    
+    -->
+    
+    
+    
+    <section>
+        <p>4. Prueba. 4 hijos dentro de p 
+            <span>Hijo 1 del p tipo span</span>
+            <span> Hijo2 del p -> tipo span
+                <em>Color es el Hijo1 de 
+                    <span>tipo em dentro de span
+                    </span>
+                    , dentro de p 
+                </em> 
+            </span> 
+            <em>Hijo 3 del p --> tipo span</em>
+            <span>
+                <span>Hijo 4 del p, primer hijo de un span</span>
+                <em>Hijo 4 del p, que es ultimo hijo de un span</em>
+            </span>
+        last child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :last-child {color: aqua;}-> El elemento que cumpla la condicion de ser el ultimo hijo (a cualquier nivel de descendencia) dentro de p -> AQUA.
+    Cumplen la condición:
+        <em>Color es el Hijo1 de tipo em dentro de span, dentro de p </em> -> Es ultimo hijo de alguien que se encuentra dentro de un p
+        
+        <span>
+                <span>Hijo 4 del p, primer hijo de un span</span>
+                <em>Hijo 4 del p, que es ultimo hijo de un span</em>
+        </span> -> Este span es ultimo hijo de alguien
+    
+    2. Llega la regla p em:last-child {color:red;} -> El elemento que cumpla la condicion de ser el ultimo hijo (a cualquier nivel de descendencia) dentro de p y que además sea em. 
+    Cumple la condición: "<em>Color es el Hijo1 de tipo em dentro de span, dentro de p </em>" y "<em>Hijo 4 del p, que es ultimo hijo de un span</em>"-> RED
+    
+    3. Llega la regla p em :last-child {color:rosybrown;} -> El el ultimo hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+ 
+    -->
+    
+    
+    <section>
+        <p>5. Prueba 
+            <span> Hijo1 del p -> tipo span
+               <span>Hijo 1 
+                    <em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>
+               </span>
+               <em>Color es el Hijo2 de tipo em dentro de span, dentro de p </em> 
+            </span> 
+            <em>Hijo 2 del p tipo em-> <span>dentro tipo span</span></em>
+        last child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :last-child {color: aqua;}-> El ultimo hijo dentro de un p en AQUA.
+    Cumplen:
+        <em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>
+        <em>Hijo 2 del p -> tipo span</em>
+    
+    2. Llega la regla p em:last-child {color:red;} -> El ultimo hijo dentro de p, que sea em. "<em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>" 
+    Cumplen:
+        <em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>
+        <em>Hijo 2 del p -> tipo span</em>
+        
+    3. Llega la regla p em :last-child {color:rosybrown;} -> El ultimo hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+    Finalmente color-> Rojo 
+    -->
+    </body>
+   
+</html> 
+
+
+<!--
+body{
+    color:green;
+}
+p :last-child {
+    color: aqua;
+}
+p em:last-child {
+  color:red;
+    
+}
+
+p em :last-child {
+  color:rosybrown;
+    
+}
+-->
+

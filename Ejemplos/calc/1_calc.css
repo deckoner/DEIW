@@ -1,0 +1,73 @@
+/* 
+calc--> Permite combinaciones de operaciones +, -, * y /
+
+En + y -, operadores y operación separados por espacio. 23px-8x da error porque 8px interpreta como número negativo.
+Correcto: 23px - 8px
+
+Se pueden utilizar paréntesis para priorzar operadores.
+
+* --> Al menos uno de los argumentos debe ser un <number>
+
+/ División. El divisor debe ser un <number>.
+La división por cero dará lugar a un error 
+
+*/
+
+*{color:green;}
+
+
+
+/*EJEMPLO1-*/
+
+
+.banner {
+  
+  left: 40px;    
+  width: calc(100% - 200px);
+  border: solid black 1px;
+  box-shadow: 1px 2px;
+  background-color: yellow;
+  padding: 6px;
+  text-align: center;
+ 
+}
+
+
+/*
+EJEMPLO2 */
+.banner1 {
+  
+  left: 40px;
+  width: calc(100% - 600px);
+  border: solid black 1px;
+  box-shadow: 1px 2px;
+  background-color: yellow;
+  padding: 6px;
+  text-align: center;
+}
+
+
+/* EJEMPLO3*/
+.banner2 {
+  
+  left: 40px;
+  width: calc((100% - 600px )* 2);
+  border: solid black 1px;
+  box-shadow: 1px 2px;
+  background-color: yellow;
+  padding: 6px;
+  text-align: center;
+}
+
+/* EJEMPLO4*/
+.banner3 {
+  
+  left: 40px;
+  width: calc((100% + -600px)/2.2222);
+  border: solid black 1px;
+  box-shadow: 1px 2px;
+  background-color: yellow;
+  padding: 6px;
+  text-align: center;
+  
+}

@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="BORDES.">
+        <link rel="stylesheet" href="">
+        <style> 
+        #borderimg1 { 
+            border: 20px solid transparent; <!-- Debe llevar estilo, aunque después no se vea porque es transparent y lleva imagen. 
+			Si no hay estilo, no se ve. -->
+            padding: 15px;
+            border-image: url(balon.jpg) 30 round;
+        }
+
+        #borderimg2 { 
+            border: 20px solid green;
+            padding: 15px;
+            border-image: url(balon.jpg) 30 space;
+        }
+        #borderimg3 { 
+            border: 20px solid green;
+            padding: 15px;
+            border-image: url(balon.jpg) 30 ; <!-- strech por defecto -->
+        }
+		#borderimg4 { 
+            border: 20px solid green;
+            padding: 15px;
+            border-image: url(balon.jpg) 30 repeat;         }
+            
+        #capaborde{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) 33% round; <!-- Debe llevar un estilo, aunque después no se vea porque lleva imagen. Sino, no se ve -->
+            
+            }
+        #capaborde2{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) 50% round;
+        }
+            #capaborde3{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) 20% round;
+        }
+            #capaborde4{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) 70% round;
+        }
+             #capaborde5{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) round;
+            border-image-slice: 70% fill 7 12;
+        }
+             #capaborde6{
+            width: 300px; 
+            height: 150px; 
+            border: 30px double blue; 
+            border-image: url(baldosin.jpg) round;
+            border-image-slice: 30% fill 7 12;
+        }
+			#capaborde-outset{
+			width: 300px; 
+            height: 150px; 
+			border: 20px solid blue;
+			border-image: url(balon.jpg) round;
+			border-image-outset: 10px;
+		}
+			#capaborde-outset2{
+			width: 300px; 
+            height: 150px; 
+			border: 10px solid blue;
+			border-image: url(balon.jpg) round;
+			border-image-outset: 5.5;
+			display: inline-block;
+			
+		}
+            
+
+        </style>
+    </head>
+    <body>
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow">
+        El contenido 
+    </div>
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;border-radius: 25px; margin: 3px; background-color: greenyellow">
+        El contenido. Radius 25px
+    </div>
+    
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;border-radius: 50px; margin: 3px; background-color: greenyellow">
+        El contenido. Radius 50px
+    </div>
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;border-radius: 10px; margin: 3px; background-color: greenyellow">
+        El contenido. Radius 10px
+    </div>
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;border-radius: 90px; margin: 3px; background-color: greenyellow">
+        El contenido. Radius 90px
+    </div>
+    
+    <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;outline: 2px dotted blue; margin: 3px; background-color: greenyellow">
+        El contenido. Outline
+    </div>
+    <br><br><br>
+    <div style="width: 60px; height: 45px; padding: 10px;border: 3px solid black;outline: 2px dotted blue; outline-offset: 30px; margin: 3px; background-color: greenyellow">
+        El contenido. Outline con offset
+    </div>
+ <br><br><br>
+  
+    <div id="borderimg3">
+        El contenido. border image strech- por defecto
+    </div>
+	<br><br><br>
+	<div id="borderimg4">
+        El contenido. border image repeat
+    </div>
+	 <br><br><br>
+	 <div id="borderimg1">
+        El contenido. border image round
+    </div>
+   
+    <br><br><br>
+    <div id="borderimg2">
+        El contenido. border image space
+    </div>
+    <br><br><br>
+	
+	<label for="imagen"> Imagen del borde </label>
+    <img src="baldosin.jpg" id="imagen">
+	
+    <div id="capaborde">
+        El contenido. border image slice 33%. Sin round. Estira lo sobrante
+    </div>
+    <br><br><br>
+    <div id="capaborde2">
+        El contenido. border image slice 50% con round (repite las sobras)
+    </div><br><br><br>
+    <div id="capaborde3">
+        El contenido. border image slice 20%
+    </div><br><br><br>
+    <div id="capaborde4">
+        El contenido. border image slice 70%
+    </div>
+	<br><br><br>
+	<div id="capaborde-outset"> 
+		El contenido. border outset 10px
+	</div>
+	<br><br><br>
+	<hr>
+	 <div style="width: 180px; height: 45px; display: inline-block; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow">
+        El contenido 
+    </div>
+    <div id="capaborde-outset2"> 
+		El contenido. border outset numero (multiplica por anchura del borde)
+	</div>
+   
+     </body>
+</html>

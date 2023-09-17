@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+       <link rel="stylesheet" href="Firstchild.css">
+    </head>
+
+    <body>
+    <header>FIRST CHILD</header>
+    
+    <section>
+        <p>1. Prueba 
+            <em>color</em> 
+            First child
+        </p>
+    </section>
+    <!-- 
+    1. Le aplica la regla p :first-child {color: aqua;}-> El primer hijo dentro de un p en aqua.En este caso el em, palabra color-> Aqua
+    
+    2. Llega la regla p em:first-child {color:red;} -> El primer hijo dentro de p, que sea em. En este caso lo cumple-> color-> Rojo
+    
+    3. Llega la regla p em :first-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. Resulta que em no tiene hijo, así que no aplica.
+    
+    Finalmente color-> Rojo
+    *
+    -->
+    
+    
+    
+    
+    <section>
+        <p>2. Prueba 
+            <span>
+                <ins>
+                    <em>
+                        <small>color </small>
+                    First</em> 
+                child</ins>
+            </span> 
+        </p>
+    </section>
+     <!--   
+    /*
+    1. Le aplica la regla p :first-child {color: aqua;}-> El primer hijo dentro de un p en aqua.En este caso todo el span: color First child -> Aqua
+    
+    2. Llega la regla p em:first-child {color:red;} -> El primer elemento que cumpla las condiciones de ser primer hijo y de tipo em que esté dentro de p (da igual en qué lugar sucesorio. em aquí es hijo de ins, que a su vez es de span, que a su vez es de p). En este caso color First
+    
+    3. Llega la regla p em :first-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. En este caso small que engloba sólo la palabara color.
+    
+    Finalmente color->rosybrown, First->rojo, child-> Aqua
+    
+    -->
+    
+    <section>
+        <p>3. Prueba 
+            <span>
+                <em>color </em>
+            First</span> 
+        child</p>
+    </section>
+    <!--
+    1. Le aplica la regla p :first-child {color: aqua;}-> El primer hijo dentro de un p en aqua.En este caso todo el span: color First -> Aqua
+    
+    2. Llega la regla p em:first-child {color:red;} -> El elemento que cumpla la condicion de ser primer hijo dentro de p, que sea em, palabra color->Rojo
+    
+    3. Llega la regla p em :first-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+    Finalmente color->rojo First-> Aqua
+    
+    -->
+    
+    
+    
+    <section>
+        <p>4. Prueba 
+            <span>Hijo 1 del p tipo span</span>
+            <span> Hijo2 del p -> tipo span
+                <em>Color es el Hijo1 de tipo em dentro de span, dentro de p </em> 
+            </span> 
+            <em>Hijo 3 del p --> tipo span</em>
+            <span>
+                <span>Hijo 4 del p, que es primer hijo de un span</span>
+            Hijo 4 del p
+            </span>
+        First child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :first-child {color: aqua;}-> El elemento que cumpla la condicion de ser primer hijo (a cualquier nivel de descendencia) dentro de p -> AQUA.
+    En este caso "<span>Hijo 1 del p tipo span</span>", "<em>Color es el Hijo1 de tipo em dentro de span, dentro de p </em> " y "<span>Hijo 4 del p, que es primer hijo de un span</span>" -> Todos AQUA
+    
+    2. Llega la regla p em:first-child {color:red;} -> El elemento que cumpla la condicion de ser primer hijo (a cualquier nivel de descendencia) dentro de p y que además sea em. 
+    Cumple la condición: "<em>Color es el Hijo1 de tipo em dentro de span, dentro de p </em>" -> RED
+    
+    3. Llega la regla p em :first-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+ 
+    -->
+    
+    
+    <section>
+        <p>5. Prueba 
+            <span> Hijo1 del p -> tipo span
+               <span>Hijo 1 
+                    <em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>
+               </span>
+               <em>Color es el Hijo2 de tipo em dentro de span, dentro de p </em> 
+            </span> 
+            <em>Hijo 2 del p --> tipo span</em>
+        First child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :first-child {color: aqua;}-> El primer hijo dentro de un p en AQUA.En este caso todo lo del dentro del span Hijo1 del p.......
+    
+    2. Llega la regla p em:first-child {color:red;} -> El primer hijo dentro de p, que sea em. "<em> 1.er biznieto del p de tipo em, es primer hijo de su padre, hijo del 1.er span</em>" 
+    
+    3. Llega la regla p em :first-child {color:rosybrown;} -> El primer hijo dentro de un em que está dentro de un p. En este caso em no tiene hijos, NO aplica.
+    
+    Finalmente color-> Rojo 
+    -->
+    </body>
+   
+</html> 
+
+
+<!--
+body{
+    color:green;
+}
+p :first-child {
+    color: aqua;
+}
+p em:first-child {
+  color:red;
+    
+}
+
+p em :first-child {
+  color:rosybrown;
+    
+}
+-->
+

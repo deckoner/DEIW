@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO FILTROS</title>
+        <meta name="description" content="ejemplos filter.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div style="display:table;margin:auto">
+        <div style="display:table-row; flex-wrap:no-wrap; width:900px">
+            <div style="width: 250px;height: 50px; background-color: aqua display:table-cell"> CAJA1 </div>
+            <div style="width: 250px;height: 50px; background-color: aqua; filter:blur(1px);display:table-cell"> CAJA2 blur(1px) </div>
+            <div style="width: 250px;height: 50px; background-color: aqua; filter:blur(15px);display:table-cell"> CAJA3 blur (15px)</div>
+		</div>
+		
+		
+            <div style="display:table-row">
+                <div style="display:table-cell;"><h1>1 NORMAL</h1><p></p><img src="imagenflor.jpg" style="width: 300px;"/></div>
+                <div style="display:table-cell"><!-- Desenfoque en px-->
+                    <h1>2 BLUR</h1><p>Grado de difuminado (px)</p><img src="imagenflor.jpg" style="width: 300px;filter:blur(20px);"/></div>
+
+               <div style="display:table-cell">  <!-- Escala grises en %-->
+                <h1 style="display:table-cell">3 GRAYSCALE</h1><p>Escala grises % (0%=original, 100% ByN)</p><img src="imagenflor.jpg" style="width: 300px;filter:grayscale(70%);"/>
+                </div>
+            </div>
+           
+            
+		<div style="display:table-row">
+            <!-- sepia en %--><div style="display:table-cell">
+            <h1>4 SEPIA</h1><p>Sepia % (0%=original,100% sepia)</p><img src="imagenflor.jpg" style="width: 300px;filter:sepia(50%);"></div>
+
+            <!-- saturación en % 0%=B&N, 100% original, permite >100--><div style="display:table-cell">
+            <h1>5 SATURATE</h1><p>Saturación % (0%=ByN,100%=original, permite >100)</p><img src="imagenflor.jpg" style="width: 300px;filter:saturate(300%);"></div>
+
+            <!-- opacity en % 0%=invisible--><div style="display:table-cell">
+            <h1>6 OPACITY</h1><p>Transparecia %(0%=invisible, 100% visible)</p><img src="imagenflor.jpg" style="width: 300px;filter:opacity(50%);"></div>
+        </div>
+		<div style="display:table-row">
+            <!-- brightness en % 0%=negro,  100% original, permite >100--><div style="display:table-cell">
+            <h1>7 BRIGHTNESS</h1><p>Brillo % (0=negro, 100%=original, permite >100 )</p><img src="imagenflor.jpg" style="width: 300px;filter:brightness(50%);"></div>
+
+            <!-- contrast en % 0%=gris--><div style="display:table-cell">
+            <h1>8 CONTRAST</h1><p>Contraste % (0%=gris,100% original, permite >100)</p><img src="imagenflor.jpg" style="width: 300px;filter:contrast(200%);"></div>
+
+            <!-- hue-rotate en grados de 0 a 360deg
+            Define el numero de grados dentro del círculo del color en la que la imagen será ajustada--><div style="display:table-cell">
+            <h1>9 HUE_ROTATE</h1><p>Rotacion de color (matiz- Define el numero de grados dentro del círculo del color en la que la imagen será ajustada) grados (0-360deg=original ) </p><img src="imagenflor.jpg" style="width: 300px;filter:hue-rotate(180deg);"></div>
+        </div>
+       
+        <div style="display:table-row">
+            <!-- invert en % o numero 0%=original, 100% invertido
+            Invierte los valores de saturacion, brillo y hue (color)--><div style="display:table-cell">
+            <h1>10 INVERT</h1><p>Invierte los valores de saturacion, brillo y hue (color) % (0%=original, 100% invertido)</p><img src="imagenflor.jpg" style="width: 300px;filter:invert(100%);"/></div>
+
+            <div style="display:table-cell"><!-- drop-shadow en x,y (ambos requeridos),blur (desenfoque),spread,(en px, + para expandir, - para encoger la sombra), color (de la sombra)-->
+            <h1>11 DROP_SHADOW</h1><p>Sombra idéntica x,y (ambos requeridos),blur (desenfoque),spread,(en px, + para expandir, - para encoger la sombra), color (de la sombra)</p><img src="imagenflor.jpg" style="width: 300px;filter:drop-shadow(8px 10px 30px green);"/></div>
+
+            <!-- Efectos combinados --><div style="display:table-cell">
+            <h1>12 EFECTOS COMBINADOS</h1><p>Filtros aplicados: drop-xhadow, contraste y hue-rotate</p><img src="imagenflor.jpg" style="width: 300px;filter:drop-shadow(8px 10px 30px red) contrast(150%) hue-rotate(120deg)"/></div>
+		</div>
+        </div>
+        
+     </body>
+</html>

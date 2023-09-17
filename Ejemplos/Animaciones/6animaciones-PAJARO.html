@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <title>Fondo animado con CSS</title> 
+		<meta name="viewport" content=width=device-width, initial-scale=1.0">
+        
+        <style>
+            .pajaro {
+                /**/
+                height: 250px;
+                width: 230px;
+                margin: auto;
+                position: absolute;
+                top:0%;
+                left:0%;
+                background-repeat: no-repeat;
+                animation-name: pajaro; 
+                animation-duration:10s;
+                animation-iteration-count:1;
+				animation-fill-mode:backwards;
+				
+            }
+            .pajaro2 {
+                /**/
+                height: 95px;
+                width: 91px;
+                margin: auto;
+                position: absolute;
+                bottom:10%;
+                left:10%;
+                background-repeat: no-repeat;
+                animation-name: pajaro2; 
+                animation-duration: 10s;
+                animation-iteration-count: 1;
+				animation-fill-mode:forwards;
+            }
+           
+          .arbol{
+                width: 100%;
+                animation-name: arbol; 
+                animation-duration: 10s;
+                animation-iteration-count: 1;
+                overflow: hidden;
+                position: absolute;
+                animation-direction: normal;
+                animation-timing-function: linear;
+				
+            }
+            
+            @keyframes arbol{
+                from{
+                    filter:opacity(100%);
+                    transform: translateX(100%) scale(1,1) ;
+                }
+                to{
+                    filter:opacity(0%);
+                    transform: translateX(0%) scale(0.5, 0.5);
+                }
+                
+            }
+    
+            @keyframes pajaro 
+			/*Defino el número de fotogramas por %. En este caso 10 fotogramas. Y dentro de cada uno de ellos lo que va a ocurrir. Cambiar el fondo y moverse un %, el que quiera o igual (100/10 fotogramas= 10% en cada fotograma*/
+        { 
+            5%{
+                background-image: url(secuenciaimagenes/imagen1.png);
+            }
+            10%{
+                background-image: url(secuenciaimagenes/imagen2.png);
+            }
+            20%{
+                background-image: url(secuenciaimagenes/imagen3.png);
+            }
+            25%{
+                background-image: url(secuenciaimagenes/imagen4.png);
+                transform:translateY(50px);
+            }
+            30%{
+                background-image: url(secuenciaimagenes/imagen5.png);
+                transform:  translateY(50px);
+            }
+            40%{
+                background-image: url(secuenciaimagenes/imagen6.png);
+                transform:translateY(50px);
+            }
+            50%{
+                background-image: url(secuenciaimagenes/imagen7.png);
+            }
+            60%{
+                background-image: url(secuenciaimagenes/imagen8.png);
+                transform:translateY(10px);
+            }
+            70%{
+                background-image: url(secuenciaimagenes/imagen9.png);
+            }
+            80%{
+                background-image: url(secuenciaimagenes/imagen10.png);
+            }
+			from{left:5%; }
+			to{left:75%;}
+        }    
+           
+            @keyframes pajaro2 
+		{
+            0%{
+                background-image: url(secuenciaimagenes/imagen1%20-%20copia.png);
+                transform: translateY(5%);
+            }
+            10%{
+                background-image: url(secuenciaimagenes/imagen2%20-%20copia.png);
+                transform: translateY(5%);
+            }
+            20%{
+                background-image: url(secuenciaimagenes/imagen3%20-%20copia.png);
+                transform: translateY(5%);
+            }
+            30%{
+                background-image: url(secuenciaimagenes/imagen4%20-%20copia.png);
+                transform: translateY(50px);
+            }
+            40%{
+                background-image: url(secuenciaimagenes/imagen5%20-%20copia.png);
+                transform: translateY(50px);
+            }
+            50%{
+                background-image: url(secuenciaimagenes/imagen6%20-%20copia.png);
+                transform: translateY(50px);
+            }
+            60%{
+                background-image: url(secuenciaimagenes/imagen7%20-%20copia.png);
+                transform: translateY(60%);
+            }
+            70%{
+                background-image: url(secuenciaimagenes/imagen8%20-%20copia.png);
+                transform: translateY(10px);
+            }
+            80%{
+                background-image: url(secuenciaimagenes/imagen9%20-%20copia.png);
+                transform: translateY(84%);
+            }
+            90%{
+                background-image: url(secuenciaimagenes/imagen10%20-%20copia.png);
+                transform: translateY(30%);
+            }
+			from{left:5%; }
+			to{left:80%;}
+        }
+		
+        </style>
+        
+    </head>
+    <body>
+        <div class="arbol"><img src="Arbol.jpg"/></div>
+        <div class="pajaro"></div>
+        <div class="pajaro2"></div>
+            
+    </body>
+</html>

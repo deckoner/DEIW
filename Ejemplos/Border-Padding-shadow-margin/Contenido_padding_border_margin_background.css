@@ -1,0 +1,15 @@
+.comunes{ /*comunes a todos los elementos del cuerpo del html*/
+	background-color:pink;
+	}
+
+#con_borde {
+	border:thick ridge white}
+
+#con_borde_padding {
+	border:thick dotted blue;
+	padding:104px}
+
+#con_borde_padding_margin {
+	border:thick groove red;
+	padding:14px;
+	margin:100px}

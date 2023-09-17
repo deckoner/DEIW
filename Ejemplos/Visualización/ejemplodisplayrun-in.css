@@ -1,0 +1,17 @@
+#p1{
+	display: run-in; 
+	border: 2px dashed #C00;
+}
+#p2{
+	display: block;
+	border: 2px solid #000;
+}
+#p3{
+	display: run-in; border: 2px dashed #C00;
+}
+#c1{
+	display: run-in; border: 2px dashed #C00;
+}
+#p4{
+	display: block; border: 2px solid #000;
+}

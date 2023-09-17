@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+        <style>
+            nav a{
+                background-color: aqua;
+                border: 1px solid green;
+				margin:0px;
+            }
+            ul li{
+                list-style: none; /* Elimino el estilo para que no aparezca la viñeta */
+                border: 1px solid green;
+                background-color:aqua;
+                width: 10em;
+            }
+            ul li a{
+                display: block; /* El enlace ocupa todo el li, toda la anchura 10em*/
+                text-decoration: none; /*Elimino el estilo por defecto de los enlaces, el subrayado*/
+            }
+			.verticalnav{
+				display:block;
+				border: 1px solid green;
+				width: 10em;
+			}
+			.horizontalli{
+				display: inline-block;
+			}
+        </style>
+    </head>
+    <body>
+    <h1> Menú HORIZONTAL con nav</h1>
+    <nav>
+        <a href=""> Elemento1 Horizontal</a>
+        <a href=""> Elemento2 Horizontal</a>
+    </nav>
+       <hr>
+        <h1> Menú VERTICAL con Listas</h1>
+         <ul>
+            <li><a href="#">Dentro1</a></li>
+            <li><a href="#">Dentro2</a></li>
+            <li><a href="#">Dentro3</a></li>
+            <li ><a href="#">Dentro4</a></li>
+         </ul>
+      </li>
+	  
+	  
+	  <h1> Menú VERTICAL con nav</h1>
+    <nav>
+        <a class="verticalnav" href=""> Elemento1 Horizontal</a>
+        <a class="verticalnav" href=""> Elemento2 Horizontal</a>
+    </nav>
+       <hr>
+        <h1> Menú HORIZONTAL con Listas</h1>
+         <ul>
+            <li class="horizontalli"><a href="#">Dentro1</a></li>
+            <li class="horizontalli"><a href="#">Dentro2</a></li>
+            <li class="horizontalli"><a href="#">Dentro3</a></li>
+            <li class="horizontalli"><a href="#">Dentro4</a></li>
+         </ul>
+      </li>
+	  
+	  
+	  
+    
+    
+     </body>
+</html>

@@ -23,16 +23,30 @@ hr {
   border-bottom: 1px solid grey;
 }
 
-.uno li{
+.uno li:first-child{
   background: lightsteelblue;
 }
 
-.dos{
+.dos {
+  color: red;
+}
+
+.dos ol > li:nth-child(3){
   background: lightsteelblue;
 }
 
-.tres {
+.dos i::after{
+  content: " Soy posterior al bloque 2";
+  color: green;
+}
+
+.tres ul li:nth-child(-n+3) {
   background: lightsteelblue;
+}
+
+.tres::before{
+  content: "Soy previo al bloque 3";
+  color: blue;
 }
 
 

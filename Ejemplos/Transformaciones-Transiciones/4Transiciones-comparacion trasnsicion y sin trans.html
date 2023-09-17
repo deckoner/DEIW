@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+        <style>
+            .c1{
+                width: 40px;
+                height: 60px;
+                border:4px solid pink; 
+                background-color: green;
+                
+                
+            }
+            .c2{
+                width: 40px;
+                height: 60px;
+                border:4px solid violet; 
+                background-color: red;
+                transition-duration: 0.7s; /*duracion total de la transición*/
+                transition-delay: 0.1s /*Retraso al iniciarse la transición*/
+				transition-timing-function: Ease-in-out; 
+				/*Diferentes tipos según la velocidad: 
+                - Linear: mantiene la misma velocidad de principio a fin.
+                - Ease: comienzo lento, luego rápido y termina lento.
+                - Ease-in: comienza lento, y después mantiene velocidad.
+                - Ease-out: mantiene velocidad con un final lento.
+                - Ease-in-out: comienzo y fin lentos, muy similar a ease sólo que este último empieza más rápido de lo que termina.
+                - Cubic-bezier: este es un poco más complejo, no voy a entrar en detalle, pero podemos configurar la curva de velocidad a nuestro gusto utilizando la función cúbica de Bezier. Acepta cuatro valores entre 0 y 1.
+                */
+                /* transition-property: --> Se pueden listar las propiedades.  no es necesario */
+                
+            }
+            
+           
+            .c1:hover{ /*Al seleccionarse se cambian las propiedades de abajo*/
+                width: 70px;
+                height: 80px;
+                color:bisque;
+                background-color:blue;
+                left: 50%;
+                top: 50%;
+                border:8px groove black; 
+                transform: rotate(30deg);
+                text-align: center;
+            }
+            .c2:hover{ /*Al seleccionarse se cambian las propiedades de abajo*/
+                width: 70px;
+                height: 80px;
+                color:aquamarine;
+                background-color:chartreuse;
+                left: 70%;
+                top: 80%;
+                border:8px dashed black; 
+                transform: rotateX(75deg) scale(2) skewX(25deg);
+                text-align: center;
+            
+        </style>
+    </head>
+    <body>  
+        <div class="c1">CAJA1</div>
+        <div class="c1" style="transform: translate3d(20px, 5px, 100px);">CAJA2</div>
+        <div class="c2" style="transform: scaleZ(500px);">CAJA3</div>
+        <div class="c2" style="transform: scale3d(0.9, 2, 7);">CAJA4</div>
+        <div class="c2" style="transform: rotateZ(50deg);">CAJA5</div>
+        <div class="c2" style="transform: rotate3d(1, 1, 1, 50deg);">CAJA6</div>
+        <div class="c2" style="transform: perspective(600px) rotateY( 45deg );">CAJA7</div>
+        <div class="c1" style="transform: perspective(100px) rotateY( 45deg );">CAJA8</div>
+        <div class="c1" style="transform: perspective(250px) rotateY( 45deg );">CAJA9</div>
+        <div class="c1" style="transform: perspective-origin(25%,40%) perspective(250px) rotateY(45deg);">CAJA10</div>        
+     </body>
+</html>

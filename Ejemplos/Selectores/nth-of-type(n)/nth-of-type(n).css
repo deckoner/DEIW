@@ -1,0 +1,16 @@
+body{
+    color:green;
+}
+p:nth-of-type(2) {
+    color: aqua;
+}
+p em:nth-of-type(2) {
+  color:red;  
+}
+
+p span:nth-of-type(2) {
+  color:rosybrown;
+}
+
+
+}

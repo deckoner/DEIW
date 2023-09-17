@@ -1,0 +1,13 @@
+body{
+    color:green;
+}
+p :last-child {
+    color: aqua;
+}
+p em:last-child {
+  color:red;  
+}
+
+p em :last-child {
+  color:rosybrown;
+}

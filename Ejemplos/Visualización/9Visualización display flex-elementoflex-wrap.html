@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS de bloque:</h1>
+        1. DIV's se muestran uno debajo del otro, pero aquí span tiene  display:flex, flex-wrap. Se visualizan todos los elementos del body distribuidos en 1 o varias filas. Fluyen:
+        <span style="display: flex; flex-wrap: wrap;width:500px">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+            CAJA3 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet;">
+            CAJA4 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: yellowgreen; font-size: 22px";>
+            CAJA5 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: pink;align-self: auto">
+            CAJA6
+            </div>
+        </span>
+        <p>align-content: space-around</p>
+        <p>Se distribuyen igualmente espaciados en el transversal (vertical) y con un espacio igual entre ellos.</p>
+        <div style="display: flex; flex-wrap: wrap; align-content: space-around; justify-content: center; width:1000px; height: 350px;border:2px solid black;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+            CAJA3 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet;">
+            CAJA4 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: yellowgreen; font-size: 22px";>
+            CAJA5 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: pink;align-self: auto">
+            CAJA6 
+            </div>
+        </div>
+        <p>align-content: stretch.</p>
+        <p>Se distribuyen a lo largo del eje transversal (vertical). En el ppio, centro y final</p>
+        <div style="display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center; width:1000px; height: 350px;border:2px solid black;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+            CAJA3 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet;">
+            CAJA4 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: yellowgreen; font-size: 22px";>
+            CAJA5 
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: pink;align-self: auto">
+            CAJA6 
+            </div>
+        </div>
+         <p>flex-wrap: no-wrap. NO fluyen. Se quedan todos en la misma línea. Si no caben los hace pequeños.</p>
+        
+        <div style="display: flex; flex-wrap: no-wrap; width:500px; height: 350px;border:2px solid black;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+            CAJA3 sin altura
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet;">
+            CAJA4 
+            </div>
+            <div style="width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: yellowgreen; font-size: 22px";>
+            CAJA5 sin altura
+            </div>
+            <div style="height: 45px;width: 180px; padding: 10px;border: 3px solid black;margin: 3px; background-color: pink;align-self: auto">
+            CAJA6 
+            </div>
+        </div>
+        <br>        <br>
+        <br>
+
+        
+     </body>
+</html>

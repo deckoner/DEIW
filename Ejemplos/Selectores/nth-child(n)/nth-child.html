@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>:Nth-child(n) y :empty</title>
+       <link rel="stylesheet" href="nth-child.css">
+    </head>
+
+    <body>
+    <header>NTH CHILD (n) </header>
+    <main>
+    
+    
+    <section>
+        <p>1. Prueba 
+            <em>color</em> 
+            <em>nth child(2)</em>
+        </p>
+    </section>
+    <!-- 
+    1. Le aplica la regla p :nth-child(2) {color: aqua;}-> El 2.o hijo dentro de un p en aqua.En este caso "<em>nth child(2)</em>"-> Aqua
+    
+    2. Llega la regla p em:nth-child(2) {color:red;} -> El 2.o hijo dentro de p, que sea em. En este caso "<em>nth child(2)</em>"->Rojo
+    
+    3. Llega la regla p em :nth-child(2) {color:rosybrown;} -> El 2.o hijo dentro de un em que está dentro de un p. Resulta que em no tiene hijo, así que no aplica.
+    
+   
+    *
+    -->
+    
+    
+    
+    
+    <section>
+        <p>2. Prueba 
+            <span>
+                <ins>
+                   <small>color </small>
+                    <em> nth </em> 
+                child (2)
+                </ins>
+            </span> 
+            <span>2.o hijo</span>
+        </p>
+    </section>
+     <!--   
+    /*
+    1. Le aplica la regla p :nth-child(2) {color: aqua;} -> El hijo 2 dentro de un p en aqua. En este caso: "<span>2.o hijo</span>" y "<em> nth </em> "
+    
+    2. Llega la regla p em:nth-child(2) {color:red;} El hijo 2 dentro de un p en aqua que se em. En este caso: "<em> nth </em> "
+    
+    3. Llega la regla p em :nth-child(2) {color:rosybrown;} NO APLICA
+    
+  
+    
+    -->
+    
+    <section>
+        <p>3. Prueba 
+            <span>
+                <em>color </em>
+            last
+            </span> 
+        child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :nth-child {color: aqua;}
+    
+    2. Llega la regla p em:nth-child(2) {color:red;} 
+    
+    3. Llega la regla p em :nth-child(2) {color:rosybrown;} 
+    -->
+    
+    
+    
+    <section>
+        <p>4. Prueba. 4 hijos dentro de p 
+            <span>Hijo 1 del p tipo span</span>
+            <span> Hijo2 del p -> tipo span
+                <em>Color es el Hijo1 de 
+                    <span>tipo em dentro de span
+                    </span>
+                    , dentro de p 
+                </em> 
+            </span> 
+            <em>Hijo 3 del p --> tipo span</em>
+            <span>
+                <span>Hijo 4 del p, primer hijo de un span</span>
+                <em>Hijo 
+                    <span>4 </span>
+                    <span>del p, que es 2.o hijo de un span</span>
+                </em>
+            </span>
+        nth child
+        </p>
+    </section>
+    <!--
+    1. Le aplica la regla p :nth-child(2) {color: aqua;}-> El elemento que cumpla la condicion de ser el 2.o (a cualquier nivel de descendencia) dentro de p -> AQUA.
+    Cumplen la condición:
+        <span> Hijo2 del p -> tipo span
+                <em>Color es el Hijo1 de 
+                    <span>tipo em dentro de span
+                    </span>
+                    , dentro de p 
+                </em> 
+            </span> 
+    
+        <em>Hijo 4 del p, que es ultimo hijo de un span</em>
+        
+        
+    2. Llega la regla p em:nth-child(2) {color:red;} -> El elemento que cumpla la condicion de ser el 2.o hijo (a cualquier nivel de descendencia) dentro de p y que además sea em. 
+    Cumple la condición: <em>Hijo 4 del p, que es 2.o hijo de un span</em>-> RED
+    
+    3. Llega la regla p em :nth-child(2) {color:rosybrown;} -> El el 2.o hijo dentro de un em que está dentro de un p. 
+    Cumple la condición: <span>del p, que es 2.o hijo de un span</span>
+ 
+    -->
+    
+    
+    <section>
+        <p>5. Prueba 
+            <span> Hijo1 del p -> tipo span
+               <span>Hijo 1 
+                   <em> 1.er biznieto del p de tipo em, </em>
+                   <ins>es primer hijo de su padre, hijo del 1.er span</ins>
+               </span>
+               <em>Color es el Hijo2 de tipo em dentro de span, dentro de p </em> 
+            </span> 
+            <em>Hijo 2 del p tipo em-> 
+                <span>dentro tipo </span>
+                <span>span</span>
+            </em>
+        last child
+        </p>
+        <p><!-- TENDRIA QUE SER VERDE. --></p>
+    </section>
+    <!--
+    1. Le aplica la regla p :nth-child(2) {color: aqua;}-> El 2.o hijo dentro de un p en AQUA.
+    Cumplen:
+       <p><!-- TENDRIA QUE SER VERDE. -></p>
+       
+        <em>Hijo 2 del p tipo em-> 
+                <span>dentro tipo </span>
+                <span>span</span> -> Y este también cumple ser 2.0 hijo
+            </em>
+            
+         <em>Color es el Hijo2 de tipo em dentro de span, dentro de p </em> 
+         
+        <ins>es primer hijo de su padre, hijo del 1.er span</ins>
+    
+    
+    2. Llega la regla p em:nth-child(2) {color:red;} -> El 2.o hijo dentro de p, que sea em. 
+    Cumplen:
+        <em>Hijo 2 del p tipo em-> 
+                <span>dentro tipo </span>
+                <span>span</span> -> Y este también cumple ser 2.0 hijo
+            </em>
+         <em>Color es el Hijo2 de tipo em dentro de span, dentro de p </em> 
+        
+    3. Llega la regla p em :nth-child(2) {color:rosybrown;} -> El 2.o hijo dentro de un em que está dentro de un p. 
+        
+        <span>span</span>
+        
+    4. Se aplica p:empty, aunque no se vea en "<p><!-- TENDRIA QUE SER VERDE. -></p>"
+ 
+    -->
+    </main>
+    </body>
+   
+</html> 
+
+
+<!--
+body{
+    color:green;
+}
+p :nth-child(2) {
+    color: aqua;
+}
+p em:nth-child(2) {
+  color:red;
+    
+}
+
+p em :nth-child(2) {
+  color:rosybrown;
+    
+}
+-->
+

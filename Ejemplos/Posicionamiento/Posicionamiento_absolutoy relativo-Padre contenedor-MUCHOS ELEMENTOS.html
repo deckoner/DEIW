@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body style="border: 3px solid black; position: relative; top:20em;left:45em">
+       
+        DIV's se muestran uno debajo del otro (son elemento bloque):
+        
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow"> CAJA1 </div>
+        
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red; position: absolute; top:2em; left: 10em">
+        CAJA2 ROJA con absoluto top 2 em. Se desplaza hacia abajo respecto el body(relative). La siguiente caja ocupa su lugar.
+            <p style="position: absolute; bottom: 15.5em; left: 10em; color:aqua">PARRAFO dentro div ABSOLUTO ROJO con p en absoluto. Se desplaza respecto CAJA2</p>
+            <p style="position: relative; bottom: 15.5em; left: 10em; color:brown">PARRAFO dentro div ABSOLUTO ROJO con p en relative. Se desplaza respecto la posicion que le toca</p>
+        </div>
+        
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green"> CAJA3 </div>
+        
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blue; position: relative; top:2em; left: 12em">
+        CAJA4 azul con relative top 2 em. Se desplaza hacia abajo. La siguiente caja NO ocupa su lugar.
+            <p style="position: absolute; bottom: 18.5em; left: 6em; color:yellow">PARRAFO dentro div RELATIVO AZUL con p en absoluto</p>
+            <p style="position: relative; bottom: 18.5em; left: 6em; color:olive">PARRAFO dentro div RELATIVO AZUL con p en relative</p>
+        </div>
+        <div style="position:relative;">
+        <div style="position: absolute; width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet"> CAJA5 </div></div>
+        
+        <br> <br> <br>
+        
+        <p> PARRAFO1</p>
+        
+        <p style="position: absolute; bottom: 28.5em; left: 6em; color:red">PARRAFO2 ABSOLUTE</p>
+        <p style="position: relative; bottom: 28.5em; left: 6em; color:red">PARRAFO2 BIS - Parte del hueco de PARRAFO2 y se desplaza - RELATIVE</p>
+        <p> PARRAFO 3- respeta el hueco de PARRAFO2 BIS</p>
+        
+        <img src="./img/balon.jpg" title="IMAGEN1" style="width: 40px; position: absolute; top:25px; left:300px"> La imagen debería estar aquí. IMG1. <br>
+		Pero tiene posicionamiento absoluto, que lo realiza respecto la posición del contenedor
+     </body>
+</html>

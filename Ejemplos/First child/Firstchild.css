@@ -1,0 +1,13 @@
+body{
+    color:green;
+}
+p :first-child {
+    color: aqua;
+}
+p em:first-child {
+  color:red;  
+}
+
+p em :first-child {
+  color:rosybrown;
+}

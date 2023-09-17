@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo flex-run-in
+</title>
+		<link rel="stylesheet" href="ejemplodisplayrun-in.css">
+	
+	</head>
+	<body>
+	<p > flex run-in - Solo funciona con IE (mirar https://caniuse.com)
+		<p style="display: list-item; margin-left: 2em">Si la caja run-in contiene una caja de bloque, la caja run-in se convierte en una caja de bloque.</p>
+		<p style="display: list-item; margin-left: 2em"> Después de la caja run-in se encuentra una caja de bloque (que no esté posicionada de forma absoluta y tampoco esté posicionada de forma flotante), la caja run-in se convierte en una caja en línea en el interior de la caja de bloque.</p>
+		<p style="display: list-item; margin-left: 2em">En cualquier otro caso, la caja run-in se convierte en una caja de bloque.</p>
+		
+	</p>
+	
+	<p id="p1">
+		<strong>[display: run-in] -> Se convierte en Linea porque le sigue p </strong> 
+		Lorem ipsum
+	</p> 
+	
+	<p id="p2">
+		<strong>[display: block]</strong> 
+		dolor sit amet, consectetuer adipiscing elit.
+	</p> 
+	<p id="p3">
+		<strong>p con [display: run-in]</strong> 
+		Lorem ipsum
+	</p> 
+	
+	<cite id="c1"> cite con [display: run-in] Le sigue un p </cite>
+	<p id="p4">
+		<strong>p con [display: block] </strong> 
+		dolor sit amet, consectetuer adipiscing elit.
+	</p>
+	
+	
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TRANSFORMACIONES 3D</title>
+        <meta name="description" content="Transformaciones 3D CSS.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                }
+            .container{
+                border: 1px solid #000000;
+                perspective: 500px;
+                margin-top: 50px;
+                }
+            .blue{
+                transform: rotateY(45deg);
+                background-color: #0087FF;
+                /* Por defecto los hijos del 3D transform-style: flat; no conservan el 3D. Des/comentar la sgte línea para ver el efecto*/
+                transform-style:flat;
+                }
+            .gray{
+                
+                transform: rotateX(45deg);
+                background-color: #808080;
+                }
+            .green{
+                background-color:green;
+                transform: rotateZ(45deg);
+            }
+            
+            
+            
+            .gray2{
+                transform-origin: left top;
+                transform: rotateX(45deg);
+                background-color: #808080;
+                }
+            
+            .green2{
+                transform-origin: right 1%;
+                background-color:green;
+                transform: rotateZ(45deg);
+            }
+            .separacion{
+                height: 300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>TRANSFORMACIONES</h1>
+        <div class="container">
+            <div class="blue">
+                <div class="gray"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+        
+        <div class="separacion"></div>
+        <hr/>
+        <h1>TRANSFORMACIONES transform-origin</h1>
+        <div class="container">
+            <div class="blue">
+                <div class="gray2"></div>
+                <div class="green2"></div>
+            </div>
+        </div>
+    </body>
+</html>

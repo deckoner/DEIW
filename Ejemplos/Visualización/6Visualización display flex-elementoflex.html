@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS de bloque:</h1>
+        1. DIV's se muestran uno debajo del otro, pero aquí tienen display:flex, agrupadas en un span:
+        <span style="display: flex">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;flex-grow: 0">
+            CAJA1 flex-grow: 0, por defecto no crece para ocupar el espacio libre
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;flex-grow: 2">
+            CAJA2 flex-grow: 2 
+            </div>
+            <div style="display: flex;width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;flex-grow: 2">
+            CAJA3 flex-grow: 2
+            </div>
+        </span>
+        <br>        <br>
+        <br>
+
+        1. DIV's se muestran uno debajo del otro, pero aquí tienen display:inline-flex, agrupadas en un span:
+        <span style="display: inline-flex;width: 40px">
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;flex-shrink: 0">
+        CAJA1  flex-shrink: 0 --> No se reducirá para entrar en el span. Las otras sí.
+
+        </div>
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+        CAJA2 
+        </div>
+        <div style="display: flex;width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+        CAJA3 
+        </div>
+        </span>
+        <br> <!Sin este br, los siguiente se monta encima de las cajas, ya que el contenedor de estas, span, tiene display: inline-flex.-->
+       
+        <br>
+        <span style="display: flex; width: 500px">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;flex: 4">
+            CAJA1 flex: 4 500px/5=100px . En este caso ocupa 400px
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;flex: 1">
+            CAJA2 flex: 1 .En este caso ocupa 100px
+            </div>
+            <div style="display: flex;width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green; flex:0;">
+            CAJA3 flex:0. Es como valor 1
+            </div>
+        </span>
+        <br>        <br>
+        <br> 
+        <span style="display: flex; width: 500px">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 width: 180px. Al resto le quedan 500-180=320
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;flex: 3">
+            CAJA2 flex: 3 --> 320/5=64px --> En este caso 64*3=192px
+            </div>
+            <div style="display: flex;width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green; flex:2;">
+            CAJA3 flex:2. --> 320/5=64px --> En este caso 64*2=128px
+            </div>
+        </span>
+        <br>        <br>
+        <br>
+        <pre>Un valor, número sin unidades: flex-grow 
+        flex: 2;
+
+        
+        /* Dos valores: flex-grow | flex-basis */
+        flex: 1 30px;
+
+        /* Dos valores: flex-grow | flex-shrink */
+        flex: 2 2;
+
+        /* Tres valores: flex-grow | flex-shrink | flex-basis: especifica la longitud inicial de un elemento */
+        flex: 2 2 10%;</pre> 
+
+     </body>
+</html>

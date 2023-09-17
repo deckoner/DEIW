@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        .div1 {
+            /*Nombre de la animación */
+            animation-name: movimiento-diagonal1; 
+            
+            /*Duración de la animación */
+            animation-duration: 5s;
+            
+            /*Veces que se repite*/
+            animation-iteration-count: 5;
+            
+            background-color:#003399;
+            width:100px;
+            height: 100px;
+            position:absolute;
+            }
+        /*Configuración de la animación */
+        @keyframes movimiento-diagonal1 
+        { /*Posicion inicial*/
+            from {
+                left: 0;
+                top: 0;
+            }
+            to {/*Posición final*/
+                left: 100px; 
+                top: 100px;
+            }
+        }
+        
+        .div2 {
+            /*Nombre de la animación */
+            animation-name: movimiento-diagonal2; 
+            /*Duración de la animación */
+            animation-duration: 5s;
+            /*Veces que se repite*/
+            animation-iteration-count: 10;
+            
+            /*Tiempo que tarda en activarse*/
+            animation-delay: 0.1s;
+            
+            /* Dirección:
+            - normal: por defecto
+            - reverse: el recorrido lo hace al revés
+            - alternate: 
+                -la iteracción de indice impar--> normal
+                -la iteracción de indice par --> al revés
+            - reverse alternate: al revés que alternate*/
+            
+            animation-direction: alternate;
+            
+            /*Estado de la animación
+            animation-play-state: paused;*/
+            
+            background-color:green;
+            width:100px;
+            height: 100px;
+            position:absolute;
+            }
+        /*Configuración de la animación 2*/
+        @keyframes movimiento-diagonal2 
+        { /*Posicion inicial*/
+            from {
+                left: 0;
+                top: 0;
+            }
+            to {
+                left: 100px; 
+                top: 100px;
+            }
+        }/*Posición final*/
+        
+        
+
+    
+    </style>
+    <body>
+        <div class="div1"></div>
+        <div class="div2"></div>
+     </body>
+</html>

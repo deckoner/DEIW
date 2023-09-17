@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        .div1 {
+            width:100px;
+            height: 100px;
+            position: absolute;
+            top:350px;
+            left: 420px;
+			transform: rotate(-20deg);
+            transform-origin: left center;
+            /*Nombre de la animación */
+            animation-name: gira1; 
+            /*Duración de la animación */
+            animation-duration: 5s;
+            /*Veces que se repite*/
+            animation-iteration-count: 1;
+            /*animation-play-state: paused*/;
+            animation-delay: 2s;
+            
+            }
+        .div2 {
+            position: absolute;
+            top:370px;
+            left:400px;
+            transform: rotate(-120deg);
+            transform-origin: left center;
+            animation-name: gira1; 
+            /*Duración de la animación */
+            animation-duration: 2s;
+            /*Veces que se repite*/
+            animation-iteration-count: 1;
+            /*animation-play-state: paused;*/
+            animation-direction: reverse;
+            animation-delay: 2s;
+        }
+        .div3{
+            position: absolute;
+            transform: scale(0.8,0.8);
+            top: 310px;
+            left:335px;
+        }
+            
+       
+        /*Configuración de la animación */
+        @keyframes gira1 
+        { /*Defino el número de fotogramas por %. En este caso 40 fotogramas. Y dentro de cada uno de ellos lo que va a ocurrir. Girar 720º/40 veces= 18º en cada fotograma*/
+            0%{
+                transform: rotate(0deg);
+            }
+            2.5%{
+                transform:rotate(18deg);
+            }
+            5%{
+                transform: rotate(36deg);
+            }
+            7.5%{
+                transform: rotate(54deg);
+            }
+            10%{
+                transform: rotate(72deg);
+            }
+            12.5%{
+                transform: rotate(90deg);
+            }
+            15%{
+                transform: rotate(108deg);
+            }
+            17.5%{
+                transform: rotate(126deg);
+            }
+            20%{
+                transform: rotate(144deg);
+            }
+            22.5%{
+                transform: rotate(162deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            27.5%{
+                transform: rotate(198deg);
+            }
+            30%{
+                transform: rotate(216deg);
+            }
+            32.5%{
+                transform: rotate(234deg);
+            }
+            35%{
+                transform: rotate(252deg);
+            }
+            37.5%{
+                transform: rotate(270deg);
+            }
+            40%{
+                transform: rotate(288deg);
+            }
+            42.5%{
+                transform: rotate(306deg);
+            }
+            45%{
+                transform: rotate(324deg);
+            }
+            47.5%{
+                transform: rotate(342deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            52.5%{
+                transform: rotate(378deg);
+            }
+            55%{
+                transform: rotate(396deg)
+            }
+            57.5%{
+                transform: rotate(414deg);
+            }
+            60%{
+                transform: rotate(432deg);
+            }
+            62.5%{
+                transform: rotate(450deg);
+            }
+            65%{
+                transform: rotate(468deg);
+            }
+            67.5%{
+                transform: rotate(486deg);
+            }
+            70%{
+                transform: rotate(504deg);
+            }
+            72.5%{
+                transform: rotate(522deg);
+            }
+            75%{
+                transform: rotate(540deg);
+            }
+            77.5%{
+                transform: rotate(558deg);
+            }
+            80%{
+                transform: rotate(576deg);
+            }
+            82.5%{
+                transform: rotate(594deg);
+            }
+            85%{
+                transform: rotate(612deg);
+            }
+            87.5%{
+                transform: rotate(620deg);
+            }
+            90%{
+                transform: rotate(648deg);
+            }
+            92.5%{
+                transform: rotate(666deg);
+            }
+            95%{
+                transform: rotate(684deg);
+            }
+            97.5%{
+                transform: rotate(702deg);
+            }
+            100%{
+                transform: rotate(720deg);
+            }
+            
+        }
+        
+        
+    
+    </style>
+    <body>
+       <div id="main">
+       <img src="reloj.jpg"/>
+        <div class="div1"> <img src="flecha2.png"/> </div>
+        <div class="div2"> <img src="flecha2.png"/> </div>
+        <div class="div3"> <img src="redondo.png"/> </div>-->
+       </div>
+      
+     </body>
+</html>

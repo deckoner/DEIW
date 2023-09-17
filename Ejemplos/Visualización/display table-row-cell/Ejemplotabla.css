@@ -1,0 +1,11 @@
+.tablagen{
+  display: table;
+}
+.fila{
+  display: table-row;
+}
+.col{
+  display: table-cell;
+  padding: 12px;
+  background: #ddd;
+}

@@ -18,40 +18,40 @@
                   <legend>Datos identificativos</legend>
 
                   <label>Codigo de suscripcion:</label>
-                  <input type="text" id="codSub" name="codSub">
+                  <input type="text" id="codSub" name="codSub" readonly value="INS-00123" size="10">
 
                   <label>Nº Socio:</label>
-                  <input type="text" id="nSocio" name="nSocio">
+                  <input type="text" id="nSocio" name="nSocio" disabled value="123" size="10">
 
                   <label>Uusuario:</label>
-                  <input type="text" id="user" name="user">
+                  <input type="text" id="user" name="user" maxlength="10" required>
 
                   <label>Contraseña:</label>
-                  <input type="text" id="contra" name="contra">
+                  <input type="text" id="contra" name="contra" maxlength="10" required>
 
                   <label>Repite contraseña:</label>
-                  <input type="text" id="contraR" name="contraR">
+                  <input type="text" id="contraR" name="contraR" required>
 
                   <label>Nombre Completo:</label>
-                  <input type="text" id="nombreCompleto" name="nombreCompleto">
+                  <input type="text" id="nombreCompleto" name="nombreCompleto" size="30" maxlength="30" autofocus>
 
                   <label>DNI:</label>
-                  <input type="text" id="dni" name="dni">
+                  <input type="text" id="dni" name="dni" size="10" maxlength="8" pattern="[0-9]{8}">
 
                   <label>Letra:</label>
-                  <input type="text" id="letra" name="letra">
+                  <input type="text" id="letra" name="letra" size="2" maxlength="1" pattern="[A-Za-z]">
 
                   <label>Direccion:</label>
-                  <input type="text" id="direccion" name="direccion">
+                  <input type="text" id="direccion" name="direccion" size="30" maxlength="30">
 
                   <label>Ciudad</label>
-                  <input type="text" id="ciudad" name="ciudad">
+                  <input type="text" id="ciudad" name="ciudad" size="15" maxlength="15">
 
                   <label>Código postal</label>
-                  <input type="text" id="cPostal" name="cPostal">
+                  <input type="text" id="cPostal" name="cPostal" size="5" maxlength="5" pattern="[0-9]{5}">
                   
                   <label>Pais</label>
-                  <input type="text" id="pais" name="pais">
+                  <input type="text" id="pais" name="pais" size="7" disabled value="Francia">
                 </fieldset>
 
                 <fieldset>
@@ -70,13 +70,13 @@
                 <fieldset>
                     <legend>Aficiones</legend>
 
-                    <input type="checkbox" id="lerr" name="lerr"/>
+                    <input type="checkbox" id="lerr" name="lerr" checked/>
                     <label for="lerr">Leer</label>
 
-                    <input type="checkbox" id="viajar" name="viajar"/>
+                    <input type="checkbox" id="viajar" name="viajar" checked/>
                     <label for="viajar">Viajar</label>
 
-                    <input type="checkbox" id="musica" name="musica"/>
+                    <input type="checkbox" id="musica" name="musica" checked/>
                     <label for="musica">Escuchar Musica</label>
 
                     <input type="checkbox" id="deportes" name="deportes"/>
@@ -85,12 +85,32 @@
                     <input type="checkbox" id="montana" name="montana"/>
                     <label for="montana">Montaña</label>
 
-                    <input type="checkbox" id="gameEstrategia" name="gameEstrategia"/>
+                    <input type="checkbox" id="gameEstrategia" name="gameEstrategia" checked/>
                     <label for="gameEstrategia">Juegos de Estrategia</label>
+
+                    <details>
+                        <summary>Más opciones</summary>
+
+                        <input type="checkbox" id="informatica" name="informatica"/>
+                        <label for="informatica">Informatica</label>
+
+                        <input type="checkbox" id="jogging" name="jogging"/>
+                        <label for="jogging">Jogging</label>
+
+                        <input type="checkbox" id="cine" name="cine"/>
+                        <label for="cine">Cine</label>
+                    </details>
                 </fieldset>
 
                 <fieldset>
                     <legend>Enviar informaciòn</legend>
+                    <details>
+                        <summary>Más opciones</summary>
+                        <label for="archivo">Adjuntar resguardo de pago (PDF):</label>
+                        <input type="file" id="archivo" name="archivo">
+                    </details>
+                    <button type="button">Subir</button>
+                    <button type="button">Limpiar</button>
                 </fieldset>
               </form> 
         </main>

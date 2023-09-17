@@ -1,0 +1,56 @@
+#container{		
+    background: #666 url(../imagenes/fondo-nieve.jpg) no-repeat;
+    width: 384px;
+    height: 570px;		
+    position: relative;	
+}
+#container2{		
+    background: #666 url(../imagenes/fondo-nieve2.jpg) no-repeat;
+    width: 450px;
+    height: 338px;		
+    position: relative;	
+}
+@keyframes nieve{
+    from {top: -10px;}
+    to {top: 450px;}
+}
+
+@keyframes copos{
+    0% { 
+        transform: rotate(-180deg) translate(0px, 0px); 
+    } 100% { 
+        transform: rotate(180deg) translate(10px, 75px); 
+    }
+}
+
+.snow div {
+    position: absolute;
+    top: -40px;
+    animation-name: nieve, copos;
+    animation-iteration-count: infinite; 
+    animation-direction: normal; 
+    animation-timing-function: ease-in;
+}
+.copos {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;	
+}
+.copos.f1 {
+    left: 40px;
+    animation-duration: 5s;	
+}
+.copos.f2 {
+    font-size: 1.8em;
+    left: 120px;
+    animation-duration: 7s;	
+}
+.copos.f3 {
+    left: 200px;
+    animation-duration: 8s;	
+}
+.copos.f4 {
+    font-size: 1.5em;
+    left: 280px;
+    animation-duration: 6s;	
+}

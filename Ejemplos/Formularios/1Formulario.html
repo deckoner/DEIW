@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO FORMULARIO</title>
+        <meta name="description" content="Ejemplo formularios">
+        <link rel="stylesheet" href="">
+        <style>
+            :focus{
+                background-color: aqua;
+                font-family: fantasy;
+            }   
+            :valid{
+                background-color: forestgreen;
+            }
+            
+            :in-range{
+                background-color: greenyellow; /*CAMPO EDAD MIN:10, MAX:60 */
+            }
+            :out-of-range{
+                background-color:hotpink; /*CAMPO EDAD*/
+            }
+            :disabled{
+                background-color: grey; /* CODIGO SOCIO*/
+            }
+            :required{
+                background-color: blueviolet;
+            }
+           /* :invalid{
+                background-color: red; /* EDAD, LETRA,... Se superpone a todos los estilos*/
+            }*/
+            
+        </style
+    </head>
+    <body>
+    <main>
+            <h1>FICHA DE INSCRIPCIÓN</h1>
+            <form action="#" method="post">
+                <fieldset >
+                    <legend>Datos identificativos</legend>
+                    <label for="codigoSusc" >Código de suscripción:</label>
+                    <input type="text"  name="codigoSusc" value="INS-00123" size="10" readonly id="codigoSusc"/>
+                    <label for="codigoSoc">Nº Socio:</label>
+                    <input type="integer" name="codigoSoc"  value="123" size="10" id="codigoSoc" disabled />
+                    <label for="usuario" >Usuario:</label>
+                    <input type="text" name="usuario"  id="usuario" value=""  maxlength="10" autofocus required/>
+                    <label for="contrasena" >Contraseña:</label>
+                    <input type="password" id="contrasena"   name="contrasena" value="" maxlength="10" required/>
+                    <label for="rcontrasena" >Repite Contraseña:</label>
+                    <input type="password" id="rcontrasena"   name="rcontrasena" value="" maxlength="10" required/>
+                    <label for="nombre" >Nombre Completo:</label>
+                    <input type="text"  id="nombre" name="nombre" value="" size="30" maxlength="30" />
+                    <label for="edad" >EDAD:</label>
+                    <input type="number" name="edad"  min="10" max="60" id="dni" value="" size="10" maxlength="8" pattern="^\d{8}$" title="Debes introducir ocho digitos"/> 
+                    <label for="letra" class="celda derecha" >Letra:</label>
+                    <input type="text" name="letra"   id="letra" value="" size="2" maxlength="1"  pattern="^\D{1}$" title="Debes introducir una letra"/>
+                    <label for="calle" >Dirección:</label>
+                    <input type="text" name="calle" id="calle"  value="" size="30" maxlength="30"> 
+                    <label for="ciudad" >Ciudad:</label>
+                    <input type="text"   id="ciudad" name="ciudad" value="" size="15" maxlength="15"/> 
+                    <label for="cp" class="celda derecha">Código Postal:</label>
+                    <input type="text"  name="cp"  id="cp" value="" size="5" maxlength="5"  pattern="^\d{5}$" title="Debes introducir cinco digitos"/>
+                    <label for="pais" >País: </label>
+                    <input type="text"  id="pais" name="pais" value="Francia" size="7" disabled/>
+                </fieldset>
+                
+                <fieldset >
+                    <legend>Enviar información</legend>
+                    <details>
+                        <summary>Más opciones</summary>
+                        <label for="resguardo" >Adjuntar resguardo de pago (PDF): </label>
+                        <input type="file"  id="resguardo" name="resguardo" /> 
+                    </details>
+                    <button type="submit">Enviar</button>
+                     <button type="reset">Limpiar</button>
+                </fieldset>
+            </form>
+        </main>
+     </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <style type="text/css">
+            .distable{
+                display: table;
+            }
+            .disrow{
+                display: table-row
+            }
+            .discell{
+                display: table-cell;
+                vertical-align: middle;
+                width: 50%;
+                border-left-color: green
+             }
+            
+        </style>
+        
+    </head>
+    <body>
+    <h1>SIN DISPLAY, un div debajo de otro</h1>
+    <div>
+      <div>
+        DIV1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+      <div>
+        DIV2: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+    </div>
+   <hr>
+
+     <hr>
+     <h1>CON DISPLAY table, table-row y table-cell</h1>
+    <div class="distable">
+      <div class="disrow">
+      <!-- CONSTRUYO LA FILA-->
+      <div class="discell">
+        DIV1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="discell">
+        DIV2: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      </div> 
+      <!-- Hasta AQUÍ CONSTRUYO LA FILA-->
+      <div class="disrow">
+      <!-- CONSTRUYO LA FILA-->
+      <div class="discell">
+        DIV3: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+    
+    <div class="discell">
+        DIV4: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      </div>
+      <!-- Hasta AQUÍ CONSTRUYO LA FILA-->
+      
+    </div>      
+     </body>
+</html>

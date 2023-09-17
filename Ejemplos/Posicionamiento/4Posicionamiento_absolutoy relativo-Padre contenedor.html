@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body style="border: 3px solid black; position: relative; top:20em;left:45em">
+        BODY con posicionamiento relativo que afecta a los elementos que están dentro de él:
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow">
+        CAJA1 
+        </div>
+        
+        <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red; position: absolute; top:2em; left: 10em"> 
+        <!-- Se desplaza de manera absoluta, respecto el comienzo de su padre --> 
+        CAJA2 ROJA con absoluto left 10 em y top:2em (Relativo a la posición del padre). Se desplaza hacia abajo. La siguiente caja ocupa su lugar.
+        
+        </div>
+        <div style="position: relative">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blue; position: relative; top:2em; left: 10em">
+            CAJA4 azul con relative left 10 em. Se desplaza hacia abajo relativamente a la posición que le tocaba ocupar. La siguiente caja NO ocupa su lugar.
+
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet">
+            CAJA5 
+            </div>
+             <img src="./img/balon.jpg" title="IMAGEN1" style="width: 40px; position: absolute; top:25px; left: 300px"> La imagen debería estar aquí. IMG1. Pero tiene posicionamiento absoluto, que lo realiza respecto la posición del contenedor relative más cercano, el div que contiene a CAJA3,4 y 5. Es la segunda imagen desde el borde superior
+        </div>
+        
+        <br> <br> <br>
+        PARRAFO 2 tiene un posicionamiento absoluto bottom: 40 em con respecto a un contenedor relative cercano, en su caso el body 
+        <p> PARRAFO1</p>
+        <p style="position: absolute; bottom: 40em; left: 6em">PARRAFO2</p>
+        
+        <p> PARRAFO 3 SI ocupa el lugar de parrafo2</p>
+        
+        <img src="./img/balon.jpg" title="IMAGEN1" style="width: 40px; position: absolute; top:25px; left: 300px"> La imagen debería estar aquí. IMG2. Pero tiene posicionamiento absoluto, que lo realiza respecto la posición del contenedor relative más cercano, en su caso el body. Es la primera imagen desde el borde superior
+        
+        <p style="position: fixed; top: 40em; right: 6em">PARRAFO4 fixed</p>
+     </body>
+</html>

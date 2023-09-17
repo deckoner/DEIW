@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS de bloque:</h1>
+        1. DIV's se muestran uno debajo del otro, pero aquí el contenedor tiene display:flex, justify-content:space-between (cuando los elementos no llenan todo el contenedor)  y align-items:center (lo mismo pero en el eje transversal)
+        <p> Caja1 y Caja6 respetan la alineación dada por su contenedor en el eje transversal: center</p>
+        <p> Caja 2: cambia la alineación heredada (center). Tiene align-self:flex-end</p>
+        <p>Caja3: cambia la alineación heredada (center). Tiene align-self: stretch. Quitada la altura para que se vea que se estira hasta ocupar todo el contenedor</p>
+        <p>Caja4: cambia la alineación heredada (center).Tiene align-self: baseline, se alinea en la parte superior.
+        <p>Caja5: cambia la alineación heredada (center).Tiene align-self: baseline, se alinea en la parte superior. Pero no le cabe el contenido, así que sigue creciendo ignorando la altura del contenedor.</p>
+        
+        <span style="display:flex; align-items:center; justify-content:space-between; border:3px solid black;">
+            <div style="width: 80px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 mantiene la alineacion dada por align-items:center
+            </div>
+            <div style="width: 80px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;align-self: flex-end">
+            CAJA2 align-self: flex-end
+            </div>
+            <div style="width: 80px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;align-self: stretch">
+            CAJA3 align-self: stretch . SIN ALTURA
+            </div>
+            <div style="height: 45px;width: 80px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blueviolet;align-self: baseline">
+            CAJA4 align-self: baseline.
+            </div>
+            <div style="width: 80px; padding: 10px;border: 3px solid black;margin: 3px; background-color: yellowgreen;align-self: baseline; font-size: 22px";>
+            CAJA5 align-self: baseline. SIN ALTURA. FOnt-size: 22px
+            </div>
+            <div style="height: 45px;width: 80px; padding: 10px;border: 3px solid black;margin: 3px; background-color: pink;align-self: auto">
+            CAJA6 align-self: auto.
+            </div>
+            <div style="height: 45px;width: 80px; padding: 10px;border: 3px solid black;margin: 3px; background-color: blue ;align-self: flex-end">
+            CAJA7 align-self: flex-end.
+            </div>
+        </span>
+       
+        <br>
+
+        
+     </body>
+</html>

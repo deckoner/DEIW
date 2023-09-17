@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>TRANSFORMACIONES 2D</h1>
+    <div style="display: table; margin:auto;">
+        <div style="display: table-row;text-align: center">
+            <div style="display: table-cell;"><p>1 NORMAL</p><p><img src="imagenflor.jpg" style="width: 300px;"/></p></div>
+
+            <!-- TRASLATE: traslada de lugar-->
+            <div style="display: table-cell"><p>2 TRANSLATE:traslada de lugar X e Y</p><p><img src="imagenflor.jpg" style="width: 300px;transform: translate(50px, 100px);"/></p></div> 
+
+            <div style="display: table-cell"><p>3 TRANSLATEX:traslada de lugar X</p><p><img src="imagenflor.jpg" style="width: 300px;transform: translateX(180px);"/></p></div> 
+            </div>  
+        <div style="display: table-row;height: 200px"></div>
+        <div style="display: table-row">
+            <div style="display: table-cell"><p>3 TRANSLATEY:traslada de lugar Y </p><p>
+            <img src="imagenflor.jpg" style="width: 300px;transform: translateY(120px);"/></p></div> 
+
+            <!-- Escala. Tambien existe scaleX y scaleY-->
+            <div style="display: table-cell"><p>4 SCALE: Escala fx y fy.</p><p>SCALEX y SCALEY</p><p><img src="imagenflor.jpg" style="width: 300px;transform: scale(0.5, 0.5);"/></p></div> 
+
+            <!-- SKEW (gradosx, gradosY): Deformación-->
+            <div style="display: table-cell"><p>5 SKEW: deformacion en degx y degy</p><p><img src="imagenflor.jpg" style="width: 300px;transform: skew(30deg,20deg);"/></p></div> 
+        </div> 
+        <div style="display: table-row;height: 200px"></div>
+        <div style="display: table-row">
+            <div style="display: table-cell"><p>6 SKEWX</p><p>SKEWX y SKEWY</p><p><img src="imagenflor.jpg" style="width: 300px;transform: skewX(30deg);"/></p></div> 
+            <div style="display: table-cell"><p> 7 ROTATE: Rotacion grados</p><p>ROTATEX y ROTATEY</p><p> 
+            <img src="imagenflor.jpg" style="width: 300px;transform: rotate(30deg)"/></p></div> 
+            <div style="display: table-cell"><p> 8 ROTATE + SKEWX TRANSFORM-ORIGIN: Cambia el punto de origen </p><p> 
+            <img src="imagenflor.jpg" style="width: 300px;transform-origin: 10%  10%; transform:rotate(30deg) skewx(30deg);"/></p></div>
+        </div>
+      </div>
+     </body>
+</html>

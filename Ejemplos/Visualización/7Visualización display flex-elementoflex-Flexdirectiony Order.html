@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="EJEMPLO ELEMENTOS FLEX:">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS FLEX:</h1>
+        1. DIV's se muestran uno debajo del otro, pero aquí tiene el contenedor display:flex y con flex-direction:column-reverse:
+        
+        <span style="display: flex; flex-direction:column-reverse;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green;">
+            CAJA3 
+            </div>
+        </span>
+        <br>        <br>
+        <br>
+
+        <p>2. DIV's se muestran uno debajo del otro, pero aquí el contenedor tiene display:flex y flex-direction:row. Lleva flex-shrink:0 (encoger) solamente la primera caja. Es decir esa caja no se encoge y el resto sí (por defecto:1) </p>
+        <span style="display: flex; width: 400px; flex-direction:row;border: 3px solid black;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;flex-shrink: 0">
+            CAJA1  
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+        </span>
+        <br> 
+       
+        <br>
+        <p>3. DIV's se muestran uno debajo del otro, pero aquí tiene el contenedor display:flex, agrupadas en un span. Tienen orden de aparición y propiedad flex, que las convierte a sí mismas en flexibles.</p>
+        <span style="display: flex; width: 900px;border: 3px solid black;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;flex: 4; order:2">
+            CAJA1 flex: 4 Order:2
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;flex: 1; order: 3">
+            CAJA2 flex: 1 .Order:3
+            </div>
+            <div style="display: flex;width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green; flex:0;order:1">
+            CAJA3 flex:0. Order:1
+            </div>
+        </span>
+        <br>        <br>
+        
+        
+     </body>
+</html>

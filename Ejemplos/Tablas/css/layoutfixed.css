@@ -1,0 +1,21 @@
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+table, td, th {
+	border:1px solid black;
+    width: 50px; /*MODIFICADO EL ANCHO para forzar que no entre el contenido*/
+	padding:10px;
+	border-collapse:collapse;
+    margin: 0 auto;
+    caption-side: bottom;
+    /*Table-layout:
+        - auto: las celdas y la tabla se ajustan al contenido
+        - fixed: las celdas y las tablas se establecen con col y width 
+        Se puede utilizar overflow para saber qué hacer conel sobrante.*/
+    table-layout: fixed;
+    overflow: scroll;
+}
+h1{
+    text-align: center;
+}

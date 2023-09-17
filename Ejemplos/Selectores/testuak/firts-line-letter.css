@@ -1,0 +1,15 @@
+p:nth-of-type(2){
+	color:red;
+}
+p:nth-of-type(2)::first-line{
+	color:blue;
+}
+p::first-letter{
+	color:green;
+	text-decoration:underline overline;
+}
+p:nth-of-type(2)::after{	
+	content: "Detrás del último";
+    }
+	
+::selection { color: white;  background: red; }

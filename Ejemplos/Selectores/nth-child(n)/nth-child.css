@@ -1,0 +1,17 @@
+body{
+    color:green;
+}
+p :nth-child(2) {
+    color: aqua;
+}
+p em:nth-child(2) {
+  color:red;  
+}
+
+p em :nth-child(2) {
+  color:rosybrown;
+}
+
+p:empty{
+    color:chartreuse;
+}

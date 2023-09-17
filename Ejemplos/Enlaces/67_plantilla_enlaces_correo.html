@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+ <html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+         <title>Documento XHTML basico</title>
+		 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		 <meta name="keywords" content="basico, primer, XHTM" />
+		 <meta name="description" content ="Plantilla basica " />
+		 <meta name="author" content="Amaia" />
+		 <link rel="stylesheet" type="text/css" href="ejemploimagen.css"/>
+		<style type="text/css">
+            .aconimg{
+                background: url("sobre.jpg") no-repeat;
+                /* CUIDADO con el tamaño de la imagen. 
+                Si es muy grande no la visualiza*/
+                color: blue;
+	            padding: 0 0 0 20px;
+	            text-decoration: none; /*Quitar el subrayado*/
+            }
+				a.clasePHP{color: green}
+				a.clasePHP:link {color:green}
+				a.clasePHP:visited {color:pink}
+				a.clasePHP:hover {color:aqua; background-color: olive}
+				a.clasePHP:active{color:red}
+						
+				a.claseJS{color: blueviolet}
+				a.claseJS:link:hover {color:black; background-color: papayawhip}/* Enlace no visitado cuando pasa el ratón por encima*/
+				a.claseJS:visited:hover {color:limegreen} /* Enlace YA visitado cuando pasa el ratón por encima*/
+            
+		</style>
+     </head>
+     <body>
+	 <ul>
+		<li>PHP
+			<ol>
+				<li><a class="clasePHP" href="http://www.vivaphp.com.ar" title="Gu&iacute;a de PHP">Viva PHP</a></li>
+				<li><a class="clasePHP" href="http://www.phpadictos.com" title= "Gu&iacute;a avanzada PHP">PHP Adictos</a></li>
+				<li><a class="clasePHP" href="http://www.php-hispano.net" title=" Gu&iacute;a PHP castellano"tabindex="1">PHP Hispano</a></li>
+				<li><a class="clasePHP"href="http://www.php.org.mx"title=" Gu&iacute;a PHP para M&eacute;xico">PHP M&eacute;xico </a></li>
+			</ol>
+		</li>
+		<li>JavaScript
+			<ol  >
+				<li><a class="claseJS"href="http://www.gamarod.com.ar">Gamarod</a></li>
+				<li><a class="claseJS"href="http://www.htmlpoint.com/javascript/tutorial">HTML Point</a></li>
+			</ol>
+		</li>
+	</ul>
+	<a class="aconimg" href=" ">Mi correo </a>
+		<!-- no se escribir mucho mas de momento -->
+     </body>
+ </html>

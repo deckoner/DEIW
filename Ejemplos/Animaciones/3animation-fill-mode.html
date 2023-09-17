@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        .demo {
+			border-top: 100px solid #ccc;
+			height: 300px;
+			font-family: sans-serif;
+		}
+		body{
+			font-size: 10px;
+			color: red;
+		}
+		
+		@keyframes grow {
+			0% { font-size: 15px; 
+				 color:green;
+			   }
+			100% { font-size: 40px; 
+				   color: blue; }
+		}
+		.demo:hover .grows {
+			animation-name: grow;
+			animation-duration: 3s;
+			animation-delay:0.5s;
+		}
+		.demo:hover .growsforwards {
+			animation-name: grow;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-delay:0.5s;
+		}
+		.demo:hover .growbackwards {
+			animation-name: grow;
+			animation-duration: 3s;
+			animation-fill-mode:backwards;
+			animation-delay:0.5s;
+		}
+		.demo:hover .growboth{
+			animation-name: grow;
+			animation-duration: 3s;
+			animation-fill-mode:both;
+			animation-delay:0.5s;
+		}
+
+    
+    </style>
+    <body>
+        <p>Mueve el ratón sobre la caja gris</p>
+		<div class="demo">
+			<div class="grows">Esto sólo crece</div>
+			<div class="growsforwards">Esto crece y se queda grande-forwards</div>
+			<div class="growbackwards">Esto crece y se queda en el primer fotograma-backwards</div>
+			<div class="growboth">Esto crece y se queda en el ultimo</div>
+		</div>
+		</div>
+     </body>
+</html>

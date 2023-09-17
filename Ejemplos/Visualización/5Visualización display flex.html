@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>EJEMPLO ELEMENTOS de bloque:</h1>
+        1. DIV's se muestran uno debajo del otro, pero aquí tienen display:flex, agrupadas bajo section. Como se hace bloque, el anterior y siguiente elemento, estarán en otra línea:
+        <section style="display: flex;border-style: ridge;"><!-- No convierte el contenedor en línea-->
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+            <p>Soy un p DENTRO</p>
+        </section>
+        <p style="border-style: ridge;">1 p FUERA</p>
+        <!-- 
+        Si tuviera <p style="display: inline-flex;">1 p FUERA</p> Este p no subiría seguido de section, porque section es block. Xonesguiría "anular" la línea que deja un elemento de bloque con el siguiente   
+        -->
+        <br>
+        
+        
+        2. Aquí tiene el contenedor (section) display:inline-flex. Eso significa que se convierte el contenedor en elemento de línea. Si cabe el contenedor entero, irá seguido:
+        <!-- Aquí el contenedor al entrar en el hueco dejado por la frase "2.Aquí..." se coloca detrás, en la misma línea. El elemento b, que es en línea, se coloca detrás de section. 
+        -->
+        <section style="display: inline-flex;border-style: ridge;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+            <p>Soy un p DENTRO</p>
+        </section>
+        <b style="border-style: ridge;">Toi fuera pero soy elemento en línea</b>
+        <p style="border-style: ridge;">1 p FUERA</p>
+        <br>
+         <br>
+         
+        3. Aquí tienen display:inline-flex, agrupadas en section. Eso significa que se convierte en elemento de línea el contenedor y <b>SI Y SÓLO SI CABE </b>, que NO es el caso, irá seguiendo al elemento anterior:
+        <!-- Aquí section se colocaría seguido de la frase "3. Aquí..." si entrara el contenedor entero en lo quequeda de línea, que no es el caso, por eso está en la siguiente-->
+        <section style="display: inline-flex; border-style: ridge;">
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+            <p> 1 p DENTRO de section</p>
+        </section>
+        <!-- El siguiente p se coloca tras section porque él también tiene display: inline-flex, que implica colocarse detrás del anterior. El comportamiento del siguiente elemento depende de su naturaleza (block, line) o del display que lleve asociado-->
+        <p style="display: inline-flex; border-style: ridge;">1 p FUERA con inline-flex</p>
+        <p style="display: inline-flex; border-style: ridge;">2 p FUERA con inline-flex</p>
+        <p style="display: inline-flex;border-style: ridge;">3 p FUERA con inline-flex</p>
+        <p style="border-style: ridge;">1 p FUERA SIN inline-flex</p>
+      <br>
+        
+        4. Los p se muestran uno debajo de otro. Pero aquí su contenedor tiene display: flex
+        <div style="display: flex;border-style: ridge;">
+            <p> PARRAFO1</p>
+            <p>PARRAFO2</p>
+        </div>
+        <p style="border-style: ridge;">¿Qué pasa conmigo? Soy un p FUERA</p>
+        
+        5. Los p se muestran uno debajo de otro. Pero aquí su contenedor tiene display: inline-flex
+        <div style="display: inline-flex; border-style: ridge;">
+            <p> PARRAFO1</p><p>PARRAFO2</p>
+        </div>
+        <p style="border-style: ridge;">Qué pasa conmigo? Soy un p FUERA</p>
+        <br>
+        
+        5. DIV's se muestran uno debajo del otro, pero aquí tienen display:flex, agrupadas bajo section. Y fex-direction: column-reverse.
+        Como se hace bloque, el anterior y siguiente elemento, estarán en otra línea:
+        <section style="display: flex;border-style: ridge;flex-direction: column-reverse"><!-- No convierte el contenedor en línea-->
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: greenyellow;">
+            CAJA1 
+            </div>
+            
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: red;">
+            CAJA2 
+            </div>
+            
+            <div style="width: 180px; height: 45px; padding: 10px;border: 3px solid black;margin: 3px; background-color: green">
+            CAJA3 
+            </div>
+            <p>Soy un p DENTRO</p>
+        </section>
+        <p style="border-style: ridge;">1 p FUERA</p>
+        <!-- 
+        Si tuviera <p style="display: inline-flex;">1 p FUERA</p> Este p no subiría seguido de section, porque section es block. Xonesguiría "anular" la línea que deja un elemento de bloque con el siguiente   
+        -->
+        <br>
+        
+     </body>
+</html>
