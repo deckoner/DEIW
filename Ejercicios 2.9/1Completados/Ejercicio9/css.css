@@ -1,0 +1,17 @@
+div {
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-rule: dotted;
+         column-rule: dotted;
+    -moz-column-rule-color: red;
+         column-rule-color: red;
+    background-color: rgb(221, 221, 221);
+    padding: 0.4em;
+    margin: 0.5em;
+    border-radius: 0.3em;
+}
+
+.recuadro3 {
+              -moz-column-rule-color: blue;
+                   column-rule-color: blue;
+}

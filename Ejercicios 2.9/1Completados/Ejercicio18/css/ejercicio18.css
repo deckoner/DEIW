@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    text-shadow: -0.3em -0.4em 0em rgb(121, 120, 124);
+}
+
+div {
+    background-color: rgb(204, 204, 204);
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+div::first-letter {
+    font-size: 2em; /* Cambia el tamaño de fuente según tus necesidades */
+  }
+
+.caja1 {
+    background-color: rgb(204, 204, 204);
+    border: 0.8em solid;
+    -o-border-image: url('bordes.png') 20 20 stretch;
+       border-image: url('bordes.png') 20 20 stretch;
+}
+
+.caja2 {
+    background-color: rgb(204, 204, 204);
+    border: 0.8em solid;
+    -o-border-image: url('bordes.png') 20 20 space;
+       border-image: url('bordes.png') 20 20 space;
+}
+
+.caja3 {
+    background-color: rgb(204, 204, 204);
+    border: 0.8em solid;
+    -o-border-image: url('bordes.png') 20 20 repeat;
+       border-image: url('bordes.png') 20 20 repeat;
+}

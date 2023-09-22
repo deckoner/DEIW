@@ -1,0 +1,112 @@
+/* ===============================================================
+No modificar estos estilos
+================================================================== */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+li { 
+    list-style: none; 
+}
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+header, nav, aside, footer, section, .contenedor {
+    border: 2px solid #777;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+}
+main{
+    display:flex;
+}
+.lateral1 { 
+    width: 20%; 
+}
+.contenedor { 
+    display:flex;
+    width: 80%; 
+}
+section { 
+    width: 80%; 
+}
+.lateral2 { 
+    width: 20%; 
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+}
+nav li { 
+    display: inline; 
+}
+section article img { 
+    float: left; 
+    width: 100px;
+}
+/* ================================================================
+Añade tus estilos aqui
+================================================================== */
+header, nav, aside, footer, section, .contenedor {
+    border: none;
+}
+
+header {
+    padding: 1em;
+}
+
+nav {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #004C99;
+    background-color: darkblue;
+}
+
+footer {
+    padding: 0.5em;
+    margin-top: 1em;
+    border-top: 1px dotted #C5C5C5;
+    border-bottom: 1px dotted #C5C5C5;
+    background-color: #CCCCCC;
+}
+
+img {
+    margin: 0.5em;
+}
+
+.publicidad {
+    margin-top: 1em;
+    border: 1px dotted #CC6600;
+    background-color: #FFFF33;
+}
+
+.noticias {
+    border: 1px solid #C5C5C5;
+    background-color: #CCCCCC;
+}
+
+.lateral2 {
+    border: 1px solid #CC6600;
+}
+
+.lateral2  > h2 {
+    padding: 0.2em;
+    background-color: #DB905C;
+}
+
+.noticias, .publicidad, article {
+    padding: 0.5em;
+}
+
+.noticias, article {
+    margin-bottom: 1em;
+}
+
+
+.buscador > form >label {
+    margin-right: 1em;
+}

@@ -1,0 +1,15 @@
+p {
+    color: red;
+}
+
+strong, h3:nth-of-type(2) + p + p {
+    color: blue;
+}
+
+span {
+    color:green;
+}
+
+em, del {
+    color: yellow;
+}

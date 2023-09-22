@@ -1,0 +1,17 @@
+.titulo1 {
+    text-shadow: 0.09em 0.0em 0.1em gray;
+}
+
+.titulo2 {
+    text-shadow: 0em -0.09em 0.1em gray;
+}
+
+.titulo3 {
+    text-shadow: 0.02em 0.07em 0.1em rgb(211, 52, 14),
+    0.05em 0.17em 0.1em rgb(70, 145, 38),
+    0.1em 0.2em 0.1em rgb(95, 113, 237);
+}
+
+h1 {
+    font-size: 5em;
+}

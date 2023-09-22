@@ -1,0 +1,11 @@
+.cuadro1 {
+    width: 37em; /* Ancho deseado */
+    height: 31em; /* Alto deseado */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 160, 122);
+    background-image: url('../img/logo1.png'), url('../img/logo1.png'), url('../img/logo1.png'), url('../img/madera1.png');
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+}
+  

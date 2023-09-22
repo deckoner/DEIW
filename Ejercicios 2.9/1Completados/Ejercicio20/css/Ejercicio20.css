@@ -1,0 +1,21 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.recuadro1, .recuadro2 {
+    width: 15%;
+    border: 1em solid transparent;
+}
+
+.recuadro1 {
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em 0 1em 0;
+}
+
+.recuadro2 {
+    background-color: rgb(170, 170, 0);
+    border-radius: 0 1em 0 0;
+}

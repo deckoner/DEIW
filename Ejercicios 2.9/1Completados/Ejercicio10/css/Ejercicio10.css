@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Barrio';
+    src: url('font/Barrio-Regular.ttf') format('truetype');
+  }
+
+div {
+    width: 30%;
+    background-color: rgb(221, 221, 221);
+    margin-top: 3em;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+div >h1 {
+    text-align: center;
+    color: red;;
+    margin-bottom: 1em;
+}
+
+p {
+    color: red;
+    font-size: 1.4em;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recuadro1 {
+    float: left;
+    margin-left: 15%;
+    font-family: 'Niconne', cursive;
+}
+
+.recuadro2 {
+    float: right;
+    margin-right: 15%;
+    font-family: 'Barrio';
+}

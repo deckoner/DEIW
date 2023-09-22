@@ -1,0 +1,15 @@
+span {
+    color: blue;
+}
+
+p > span, em {
+    color:green;
+}
+
+em > span {
+    color: yellow;
+}
+
+strong > span {
+    color: red;
+}
