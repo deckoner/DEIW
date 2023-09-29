@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+    background-image: url('img/paper.gif');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+header {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    flex-basis: 100%;
+}
+
+/* Estilos para el título */
+h1 {
+    color: grey;
+}
+
+/* Estilos para el div contenedor */
+.contenedor {
+    background-color: lightcyan;
+    border: 10px groove lightgrey;
+    width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para las imágenes */
+.imagen {
+    width: 215px;
+    height: 180px;
+    background-color: lightblue;
+    border: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Estilos para el texto de descripción */
+.imagen p {
+    color: white;
+    font-size: 0.7em;
+    margin: 5px 0;
+}

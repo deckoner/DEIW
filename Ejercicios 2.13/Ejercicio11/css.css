@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header, nav, article, aside, footer {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+header {
+    background-color: #f1f1f1;
+    flex-basis: 100%;
+}
+
+nav {
+    background-color: #a0a0a0;
+    flex-basis: 1fr;
+}
+
+article {
+    background-color: #c0c0c0;
+    flex-basis: 2fr;
+}
+
+aside {
+    background-color: #d0d0d0;
+    flex-basis: 1fr;
+}
+
+footer {
+    background-color: #f1f1f1;
+    flex-basis: 100%;
+}
+
+header, footer {
+    background-color: rgb(255, 238, 187);
+}

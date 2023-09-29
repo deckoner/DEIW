@@ -1,0 +1,43 @@
+/* Estilos para el div contenedor */
+.contenedor {
+    background-color: lightcyan;
+    width: 620px;
+    height: 600px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+/* Estilos para el div con texto CSS */
+.texto-css {
+    width: 350px;
+    background-color: lightgrey;
+    font-family: Algerian;
+    font-size: 200px;
+    color: blue;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    z-index: 0; /* Coloca este div en el primer plano */
+}
+
+/* Estilos para el div con texto efectos */
+.texto-efectos {
+    font-family: Arial;
+    font-size: 70px;
+    color: #ff00ff;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    z-index: 1; /* Coloca este div en el segundo plano */
+}
+
+/* Estilos para el div con texto hojas */
+.texto-hojas {
+    font-family: Arial;
+    font-size: 90px;
+    color: red;
+    position: absolute;
+    top: 255px;
+    left: 40px;
+    z-index: 2; /* Coloca este div en el tercer plano */
+}

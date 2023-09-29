@@ -51,6 +51,13 @@ section article img {
 /* ================================================================
 Añade tus estilos aqui
 ================================================================== */
+* {
+    font-family: Arial;
+    font-size: 0.9em;
+    color: black;
+    line-height: 1.4;
+}
+
 header, nav, aside, footer, section, .contenedor {
     border: none;
 }
@@ -67,11 +74,13 @@ nav {
 }
 
 footer {
+    font-size: 0.75em;
     padding: 0.5em;
     margin-top: 1em;
     border-top: 1px dotted #C5C5C5;
     border-bottom: 1px dotted #C5C5C5;
     background-color: #CCCCCC;
+    color: #555;
 }
 
 img {
@@ -91,22 +100,88 @@ img {
 
 .lateral2 {
     border: 1px solid #CC6600;
+    font-size: 0.9em;
 }
 
-.lateral2  > h2 {
+.fecha {
+    display: block;
+    text-align: right;
+    color: #999;
+    width: 100%;
+}
+
+.lateral2  > article > h2 {
+    font-size: 1em;
     padding: 0.2em;
     background-color: #DB905C;
+    color: #FFF;
 }
 
-.noticias, .publicidad, article {
-    padding: 0.5em;
+.lateral2  > article > a {
+    color: #003366;
 }
 
 .noticias, article {
     margin-bottom: 1em;
 }
 
+.noticias > h2 > a{
+    color: #003366;
+}
+
+.logo > h1{
+    display: none;
+}
 
 .buscador > form >label {
     margin-right: 1em;
+}
+
+section >article > h2 {
+    font-size: 1.6em;
+    color: #CC6600;
+    line-height: 1.2;
+    margin-bottom: 0.3em;
+    word-spacing: 0.3em;
+}
+
+nav >ul > li > a{
+    font-size: 1.3em;
+    margin-right: 1em;
+    color: white;
+}
+
+.noticias, .publicidad, article {
+    padding: 0.5em;
+}
+
+section > article > a {
+    color: #CC6600;
+}
+
+section > article > p {
+    margin-top: 0.3em;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.publicidad > h2 > a {
+    color: #CC6600;
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+section article p::first-letter {
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.publicidad > p::first-letter {
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+nav > ul > li > a {
+    letter-spacing: 0.3em;
 }
