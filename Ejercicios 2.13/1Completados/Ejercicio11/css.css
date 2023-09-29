@@ -16,27 +16,23 @@ main {
 
 header, nav, article, aside, footer {
     padding: 20px;
-    flex-grow: 1;
 }
 
 header {
-    background-color: #f1f1f1;
     flex-basis: 100%;
 }
 
 nav {
-    background-color: #a0a0a0;
-    flex-basis: 1fr;
+    flex-grow: 1;
 }
 
 article {
-    background-color: #c0c0c0;
-    flex-basis: 2fr;
+    background-color: rgb(221, 221, 136);
+    flex-grow: 2;
 }
 
 aside {
-    background-color: #d0d0d0;
-    flex-basis: 1fr;
+    flex-grow: 1;
 }
 
 footer {
@@ -44,6 +40,15 @@ footer {
     flex-basis: 100%;
 }
 
+aside, nav {
+    background-color: rgb(204, 204, 255);
+}
+
+aside, nav, article{
+    border: 0.2em solid rgb(143, 143, 157);
+}
+
 header, footer {
     background-color: rgb(255, 238, 187);
+    border: 0.2em solid rgb(244, 210, 133);
 }
