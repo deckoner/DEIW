@@ -1,0 +1,25 @@
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2em;
+    background-color: blue;
+    height: 3em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    align-self: center;
+}
+nav > a:last-child {
+    margin-right: 1em;
+}

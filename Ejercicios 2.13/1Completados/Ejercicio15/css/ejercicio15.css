@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(32, 32, 32);
+    flex-basis: 100%;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section > div {
+    display: flex;
+    height: auto;
+}
+
+div > article{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+div > article img {
+    order: 1;
+    width: 20em;
+    margin-top: 1em;
+}
+
+div > article h2 {
+    order: 2;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+div > article p {
+    order: 3;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div > article button {
+    order: 4;
+    width: 10em;
+    height: 2.5em;
+    margin-bottom: 1em;
+}
+
+div > article:nth-child(1) {
+    background-color: rgb(186, 206, 227);
+}
+
+div > article:nth-child(2) {
+    background-color: rgb(182, 235, 179);
+}
+
+div > article:nth-child(3) {
+    background-color: rgb(126, 189, 187);
+}

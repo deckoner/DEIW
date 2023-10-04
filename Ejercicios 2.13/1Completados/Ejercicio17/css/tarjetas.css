@@ -1,0 +1,69 @@
+* {
+    font-family: "Montserrat, DM Serif Display";
+}
+
+body {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column wrap;
+    gap: 4em;
+    z-index: 0;
+}
+
+footer {
+    border-top: 0.1em solid black;
+    margin-top: 1em;
+    text-align: right;
+}
+
+section > a {
+    color: rgb(137, 140, 142);
+}
+
+main > section {
+    flex: 3;
+}
+
+header > h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+header > p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main > section:first-child {
+    flex: 4;
+}
+
+section p:first-of-type{
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main > section:nth-child(2) {
+    margin-top: 4.5em;
+}
+
+main > section:nth-child(3) {
+    margin-top: 3em;
+}
