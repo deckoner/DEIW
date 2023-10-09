@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+main {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 35em;
+}
+
+header {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+nav {
+    background-color: rgb(100, 149, 237);
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+aside {
+    background-color: rgb(138, 0, 139);
+    grid-column: 1;
+    grid-row: 3;
+}
+
+section {
+    background-color: rgb(74, 1, 130);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+footer {
+    grid-column: span 2;
+    grid-row: 4
+}
+
+header, footer {
+    background-color: rgb(138, 43, 226);
+}
