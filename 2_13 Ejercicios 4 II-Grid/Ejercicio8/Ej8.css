@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 + p {
+    text-align: right;
+}
+
+.contenedor {
+    display: grid;
+
+    grid-template-rows: 0.8fr 0.5fr 2.5fr 3fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 4fr 1fr;
+
+    gap: 0.3em;
+    height: 100%;
+
+
+}
+
+.caja-b {
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 2em;
+
+    text-align: center;
+    padding-top: 0.5em;
+
+    background-color: #0bc7c7;
+    color: white;
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    grid-row-end: 2;
+    grid-column-end: 6;
+
+}
+
+.caja-d {
+    background-image: url("img/Sutea.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    background-color: #0bc7c7;
+    grid-row-start: 1;
+    grid-column-start: 6;
+
+    grid-row-end: 5;
+    grid-column-end: 7;
+
+}
+
+.caja-c {
+    color: white;
+
+    background-color: #0bc7c7;
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 4;
+    grid-column-end: 3;
+
+}
+
+.caja-erdian {
+    font-family: 'Alkalami', serif;
+
+    border: 0.2em solid #0bc7c7;
+
+    grid-row-start:3;
+    grid-column-start: 3;
+
+    grid-row-end: 5;
+    grid-column-end: 6;
+
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: subgrid;
+
+}
+
+.caja-f {
+    height: 57%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-left: 1em;
+
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 0.1fr;
+}
+
+.caja-f > ul {
+    grid-row: 1;
+    grid-column: 2;
+    list-style-type: none;
+    border-left: 0.1em solid black;
+}
+
+.caja-erdian > iframe {
+    margin: 0 auto;
+}
+
+.caja-g, .caja-h, .caja-JH {
+    height: 10%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-left: 1em;
+}
+
+.caja-f, .caja-g, .caja-h, .caja-JH {
+    color: black;
+    margin-top: 0;
+    background-color: #1989bd
+}
