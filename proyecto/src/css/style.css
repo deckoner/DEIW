@@ -1,0 +1,79 @@
+:root {
+    --fondo: #F2EBC4;
+    --primario-uno: #BDBF75;
+    --primario-dos: #D9D5A3;
+    --secundario-uno: #59543B;
+    --secundario-dos: #3E4008;
+    --contraste: #c3d587;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 0.5fr 3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    background-color: var(--fondo);
+    color: var(--secundario-dos);
+
+    font-size: 1.2em;
+
+    background-image: url('../img/fondo.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+    
+header { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+
+header > h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+header > h3 {
+    margin-left: 1em;
+    margin-top: 0;
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+    grid-area: 2 / 1 / 3 / 3; 
+    background-color: blue;
+}
+
+nav > a {
+    color: var(--secundario-dos);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+main { 
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: green;
+}
+
+aside { 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--contraste);
+    text-decoration: none;
+}
