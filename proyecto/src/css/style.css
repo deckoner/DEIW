@@ -5,7 +5,7 @@
     --primario-dos: #D9D5A3;
     --secundario-uno: #59543B;
     --secundario-dos: #3E4008;
-    --contraste: #c3d587;
+    --contraste: #8a9f46;
 }
 
 body {
@@ -103,8 +103,78 @@ a:hover {
 }
 
 /* !css de IDs */
-#card1 {
-    
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--primario-uno);
+
+    border: 0.3em solid var(--contraste);
+    border-radius: 2em;
+
+    overflow: hidden;
+
+    width: 13em;
+    height: 15em;
+}
+
+#card>a {
+    text-decoration: none;
+    color: black;
+
+    z-index: 1;
+}
+
+#card>a>p {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#card>a>div {
+    position: relative;
+    display: block;
+
+    border-bottom: 0.3em solid var(--contraste);
+
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#card>a>div>img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.35;
+
+    z-index: -1;
+}
+
+#card>a>div>h1 {
+    margin: 0;
+    padding-top: 0.8em;
+
+    font-size: 1.3em;
+
+    text-align: center;
+}
+
+#card a>div>p {
+    font-size: 0.85em;
+
+    margin-top: 0;
+
+    text-align: right;
 }
 
 /* Media query para dispositivos móviles */
