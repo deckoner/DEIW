@@ -1,6 +1,7 @@
 :root {
     --fondo: #F2EBC4;
     --primario-uno: #BDBF75;
+    --primario-uno-trans: #bdbf7589;
     --primario-dos: #D9D5A3;
     --secundario-uno: #59543B;
     --secundario-dos: #3E4008;
@@ -10,9 +11,8 @@
 body {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 0.5fr 3fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    gap: 1em;
 
     background-color: var(--fondo);
     color: var(--secundario-dos);
@@ -75,12 +75,22 @@ nav>a {
 
 main {
     grid-area: 3 / 1 / 4 / 2;
-    background-color: green;
+
+    border: solid 0.2em var(--primario-uno);
+    border-radius: 1em;
+
+    padding: 1em;
+
+    background-color: var(--primario-uno-trans);
 }
 
 aside {
     grid-area: 3 / 2 / 4 / 3;
-    background-color: pink;
+
+    border: solid 0.2em var(--primario-uno);
+    border-radius: 1em;
+
+    background-color: var(--primario-uno-trans);
 }
 
 a {
@@ -92,9 +102,16 @@ a:hover {
     text-decoration: none;
 }
 
+/* !css de IDs */
+#card1 {
+    
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
-    /* Estilos para dispositivos móviles */
+    header>h3 {
+        visibility: hidden;
+    }
 }
 
 /* Media query para tablets */
