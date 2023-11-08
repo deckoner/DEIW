@@ -1,0 +1,41 @@
+:root {
+    --fondo: #F2EBC4;
+    --primario-uno: #BDBF75;
+    --primario-dos: #D9D5A3;
+    --secundario-uno: #59543B;
+    --secundario-dos: #3E4008;
+    --contraste: #c3d587;
+}
+
+/* !Animacion de los a del nav */
+nav {
+    z-index: 1;
+}
+
+nav>a::before {
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+nav>a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+nav>a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: var(--secundario-dos);
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+nav>a {
+    position: relative;
+}
