@@ -1,0 +1,28 @@
+.animacionEscribir {
+    width: 22ch;
+    /* Se añade una segunda animación blink-no-end que no parpadea */
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+/* Nueva animación que no parpadea y que se ejecuta después de un retraso de 2s */
+@keyframes blink-no-end {
+    to {
+      border-color: transparent;
+    }
+}
