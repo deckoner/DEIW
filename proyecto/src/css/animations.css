@@ -1,5 +1,5 @@
 .animacionEscribir {
-    width: 22ch;
+    width: 30rem;
     /* Se añade una segunda animación blink-no-end que no parpadea */
     animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
     white-space: nowrap;
