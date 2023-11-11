@@ -1,5 +1,5 @@
 .animacionEscribir {
-    width: 30rem;
+    width: 100%;
     /* Se añade una segunda animación blink-no-end que no parpadea */
     animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
     white-space: nowrap;
@@ -25,4 +25,16 @@
     to {
       border-color: transparent;
     }
+}
+
+@media (max-width: 767px) {
+  .animacionEscribir {
+      font-size: 1rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .animacionEscribir {
+      font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas medianas */
+  }
 }
