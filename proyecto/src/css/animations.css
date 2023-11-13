@@ -1,10 +1,15 @@
+@font-face {
+  font-family: 'Edu TAS Beginner', cursive;
+  src: url("../font/EduTASBeginner-VariableFont_wght.ttf");
+}
+
 .animacionEscribir {
-    width: 14em;
+    width: 15.5em;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family: monospace;
+    font-family: 'Edu TAS Beginner', Courier, monospace;
 }
 
 @keyframes typing {
@@ -28,12 +33,11 @@
 
 @media (max-width: 767px) {
   .animacionEscribir {
-      font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+      font-size: 1.5rem;
+      width: 10em;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .animacionEscribir {
-      font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas medianas */
-  }
+
 }

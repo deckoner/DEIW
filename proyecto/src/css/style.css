@@ -9,6 +9,20 @@
     --contraste-fondo: #758348;
 }
 
+@font-face {
+    font-family: 'Edu TAS Beginner';
+    src: url("../font/EduTASBeginner-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+h1, h2, h3 {
+    font-family: 'Edu TAS Beginner', Courier, monospace;
+}
+
 body {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -27,6 +41,8 @@ body {
 
     margin-left: 5%;
     margin-right: 5%;
+
+    font-family: "Playfair Display",Verdana, Tahoma, sans-serif;
 }
 
 header {
@@ -36,6 +52,8 @@ header {
 header>h1 {
     font-size: 2.5em;
     margin-bottom: 0;
+
+    font-family: 'Edu TAS Beginner', Courier, monospace;
 }
 
 header>h3 {
@@ -92,6 +110,18 @@ aside {
     border-radius: 1em;
 
     background-color: var(--primario-uno-trans);
+}
+
+
+article img {
+    width: 100%;
+    max-height: 400px;
+
+    object-fit: cover;
+
+    margin-bottom: 1em;
+
+    border: solid 0.2em var(--primario-uno);
 }
 
 a {
@@ -180,8 +210,8 @@ a:hover {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
-    header > h3 {
-        visibility: hidden;
+    nav {
+        justify-content: space-between;
     }
 
     aside {
@@ -190,6 +220,14 @@ a:hover {
 
     main {
         grid-area: 3 / 1 / 3 / 3;
+    }
+
+    header {
+        height: 2em;
+    }
+
+    header > h3 {
+        visibility: hidden;
     }
 
     /* !css de IDs */
