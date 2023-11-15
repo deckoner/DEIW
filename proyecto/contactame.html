@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo de HTML5"/>
+	<meta name="keywords" content="HTML5, CSS3"/>
+    <meta name="author" content="Brian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="src/img/favicon.ico"/>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/transiciones.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+    <script src="src/js/util.js"></script>  
+    <title>El Terriermon Filosofo</title>
+</head>
+<body>
+    <header class="headerAnimacion">
+        <h1 class="animacionEscribir">El Terriermon Filosofo</h1>
+        <h3 class="animacionEscribir">Ire ad potandum vinum cum hilaritate</h3>
+    </header>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="sobre_mi.html">Sobre mi</a>
+        <a href="articulos">Articulos</a>
+        <a href="contactame.html">Contactame</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contacto por red social</h2>
+            <p>Si quieres contactar con un seguidor del terriermoncismo, filósofo, programador, camarero, ilustrador frustrado y payaso a tiempo parcial, aquí te dejo mi Github</p>
+            <a href="https://github.com/deckoner"><img src="/src/img/Deckoner.svg" 
+                alt="Logo antiguo de Github junto ocn el nombre de usuario 'Deckoner'" id="logoGithubDeck"></a>
+
+            <h2>Contacto por email</h2>
+            <form action="email" method="post" id="email">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail" />
+      
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+
+                <input type="submit" name="formulario" value="Enviar Email" id="botonInput">
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <article>
+            <h3>Cosas no filosoficas que molan</h3>
+            <h4>Digimon que me gusta Aleatorio</h4>
+            <div id="digimonAleatorio">
+                <hr>
+            </div>
+        </article>
+    </aside> 
+</body>
+</html>

@@ -34,7 +34,7 @@ body {
 
     font-size: 1.2em;
 
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo.webp');
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -157,6 +157,42 @@ hr {
     color: var(--contraste);
 }
 
+form {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+
+    border: solid 0.2em var(--primario-uno);
+    border-radius: 1em;
+
+    background-color: var(--primario-uno-trans);
+}
+
+form > textarea {
+    height: 20em;
+    overflow-y: auto;
+    resize: none; 
+}
+
+form > input, textarea {
+    background-color: var(--primario-dos);
+
+    border-radius: 1em;
+
+    padding-left: 1em;
+}
+
+form > input:focus, textarea:focus {
+    border-color: var(--contraste);
+
+    outline: none;
+}
+
 /* !css de IDs */
 #digimonAleatorio > p {
     margin-top: 0.5em;
@@ -256,10 +292,40 @@ hr {
     text-align: right;
 }
 
+#botonInput {
+    width: fit-content;
+
+    margin-top: 1em;
+
+    padding: 0.6em;
+    padding-right: 1em;
+}
+
+#logoGithubDeck {
+    width: 15em;
+}
+
+#sobreMi > article:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#sobreMi > article:first-of-type > img {
+    width: 20em;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
     nav {
+        flex-wrap: nowrap;
         justify-content: space-between;
+    }
+
+    nav > a {
+        text-align: center;
     }
 
     aside {
@@ -353,9 +419,45 @@ hr {
         margin-right: 0.3em;
      }
 
+     #sobreMi > article:first-of-type {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobreMi > article:first-of-type > img {
+        width: 90%;
+        margin-bottom: 0.3em;
+    }
+
 }
 
 /* Media query para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos para tablets */
+    aside {
+        visibility: hidden;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content:space-between;
+    }
+
+    main {
+        grid-area: 3 / 1 / 3 / 3;
+    }
+
+    h2 ~ form {
+        margin: 0 auto;
+    }
+
+    /* !css de IDs */
+
+    #logoGithubDeck {
+        width: 20em;
+    }
+
+    h2 ~ #card {
+        margin: 0 auto;
+    }
+
 }

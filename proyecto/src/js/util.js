@@ -40,4 +40,12 @@ function imprimirDatosDigimon(digimon) {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     digimonFavorito()
+
+    document.getElementById('email').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Aquí va el código para enviar el correo
+        this.reset();
+
+        alert("Email enviado con exito")
+       });
 });
