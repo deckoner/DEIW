@@ -6,126 +6,266 @@
 }
 
 .animacionEscribir {
-    width: 15.5em;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: 'Edu TAS Beginner', Courier, monospace;
+  width: 15.5em;
+  -webkit-animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
+          animation: typing 2s steps(22), blink .5s step-end infinite alternate, blink-no-end .5s 2s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Edu TAS Beginner', Courier, monospace;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0
+  }
 }
 
 @keyframes typing {
-    from {
-      width: 0
-    }
+  from {
+    width: 0
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+  50% {
+    border-color: transparent
+  }
+}
+
+@-webkit-keyframes blink-no-end {
+  to {
+    border-color: transparent;
+  }
 }
 
 @keyframes blink-no-end {
-    to {
-      border-color: transparent;
-    }
+  to {
+    border-color: transparent;
+  }
 }
 
 /* Animacion de cookies */
+@-webkit-keyframes chipLighter {
+  0% {
+    opacity: 0;
+    transform: rotate(0turn);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(12turn);
+  }
+}
 @keyframes chipLighter {
   0% {
     opacity: 0;
     transform: rotate(0turn);
   }
+
   5% {
     opacity: 1;
   }
+
   100% {
     transform: rotate(12turn);
   }
 }
 
 /* Make the darker cookie chips scale */
+@-webkit-keyframes chipDarker {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes chipDarker {
   0% {
     opacity: 0;
     transform: scale(3);
   }
+
   10% {
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
   }
 }
 
 /* Make the lighter cookie strokes zoom in and zoom out  */
+@-webkit-keyframes lighterStrokes {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(0.6);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  75% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes lighterStrokes {
   0% {
     opacity: 0;
     transform: scale(1);
   }
+
   5% {
     opacity: 1;
   }
+
   25% {
     transform: scale(0.6);
   }
+
   50% {
     transform: scale(1.4);
   }
+
   75% {
     transform: scale(0.8);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
 /* Make the darker cookie strokes zoom out and zoom in  */
+@-webkit-keyframes darkerStrokes {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1.4);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes darkerStrokes {
   0% {
     opacity: 0;
     transform: scale(1);
   }
+
   5% {
     opacity: 1;
   }
+
   25% {
     transform: scale(1.4);
   }
+
   50% {
     transform: scale(0.8);
   }
+
   75% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
 /* The drawing & fill in animation for the left circle  */
+@-webkit-keyframes drawing {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes drawing {
   100% {
     stroke-dashoffset: 0;
   }
 }
+
+@-webkit-keyframes fillIn {
+  0% {
+    fill: #fff;
+  }
+
+  100% {
+    fill: #A5694B;
+  }
+}
+
 @keyframes fillIn {
   0% {
     fill: #fff;
   }
+
   100% {
     fill: #A5694B;
   }
 }
 
 /* The appear animation for the right circle & the small chunks */
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -137,7 +277,8 @@
 
 .circle-right {
   fill: #B97850;
-  animation: appear .4s 6s backwards;
+  -webkit-animation: appear .4s 6s backwards;
+          animation: appear .4s 6s backwards;
 }
 
 .circle-left {
@@ -146,15 +287,18 @@
   stroke-width: 2;
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;
-  animation: drawing 5s linear forwards, fillIn .8s 5s forwards;
+  -webkit-animation: drawing 5s linear forwards, fillIn .8s 5s forwards;
+          animation: drawing 5s linear forwards, fillIn .8s 5s forwards;
 }
 
 .chocolate-chip-lighter {
   fill: #734B46;
   transform-origin: center;
   transition: .4s;
-  animation: chipLighter 10s 7s ease-in-out backwards;
+  -webkit-animation: chipLighter 10s 7s ease-in-out backwards;
+          animation: chipLighter 10s 7s ease-in-out backwards;
 }
+
 .chocolate-chip-lighter:hover {
   transform: rotate(360deg);
 }
@@ -163,8 +307,10 @@
   fill: #644141;
   transform-origin: center;
   transition: .4s;
-  animation: chipDarker 2s 17s linear backwards;
+  -webkit-animation: chipDarker 2s 17s linear backwards;
+          animation: chipDarker 2s 17s linear backwards;
 }
+
 .chocolate-chip-darker:hover {
   fill: #C98850;
 }
@@ -173,8 +319,10 @@
   fill: #C98850;
   transition: .4s;
   transform-origin: center;
-  animation: lighterStrokes 2s 20s linear backwards;
+  -webkit-animation: lighterStrokes 2s 20s linear backwards;
+          animation: lighterStrokes 2s 20s linear backwards;
 }
+
 .stroke-lighter:hover {
   transform: scale(1.5);
 }
@@ -183,8 +331,10 @@
   fill: #925F4A;
   transition: .4s;
   transform-origin: center;
-  animation: darkerStrokes 2s 20s linear backwards;
+  -webkit-animation: darkerStrokes 2s 20s linear backwards;
+          animation: darkerStrokes 2s 20s linear backwards;
 }
+
 .stroke-darker:hover {
   transform: scale(.7);
 }
@@ -192,17 +342,20 @@
 
 .cookie-burst-lighter {
   fill: #B97850;
-  animation: appear .4s 22s backwards;
+  -webkit-animation: appear .4s 22s backwards;
+          animation: appear .4s 22s backwards;
 }
+
 .cookie-burst-darker {
   fill: #A5694B;
-  animation: appear .4s 22s backwards;
+  -webkit-animation: appear .4s 22s backwards;
+          animation: appear .4s 22s backwards;
 }
 
 @media (max-width: 767px) {
   .animacionEscribir {
-      font-size: 2.3rem;
-      width: 9.5em;
+    font-size: 2.3rem;
+    width: 9.5em;
   }
 
   .cookie {

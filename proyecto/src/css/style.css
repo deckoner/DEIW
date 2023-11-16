@@ -19,7 +19,9 @@
     src: url("../font/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Edu TAS Beginner', Courier, monospace;
 }
 
@@ -42,7 +44,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 
-    font-family: "Playfair Display",Verdana, Tahoma, sans-serif;
+    font-family: "Playfair Display", Verdana, Tahoma, sans-serif;
 }
 
 header {
@@ -114,16 +116,20 @@ aside {
     padding: 0.3em;
     padding-bottom: 1em;
 
+    height: -webkit-fit-content;
+
+    height: -moz-fit-content;
+
     height: fit-content;
 }
 
-aside > article > h3 {
+aside>article>h3 {
     margin-bottom: 0em;
     font-size: 1.4em;
 
 }
 
-aside > article > h4 {
+aside>article>h4 {
     margin-top: 0.3em;
     margin-bottom: 0.1em;
     font-size: 1em;
@@ -133,6 +139,8 @@ aside > article > h4 {
 article img {
     width: 100%;
     max-height: 400px;
+
+    -o-object-fit: cover;
 
     object-fit: cover;
 
@@ -173,13 +181,14 @@ form {
     background-color: var(--primario-uno-trans);
 }
 
-form > textarea {
+form>textarea {
     height: 20em;
     overflow-y: auto;
-    resize: none; 
+    resize: none;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: var(--primario-dos);
 
     border-radius: 1em;
@@ -187,7 +196,8 @@ input, textarea {
     padding-left: 1em;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: var(--contraste);
 
     outline: none;
@@ -203,14 +213,14 @@ button {
 }
 
 /* !css de IDs */
-#digimonAleatorio > p {
+#digimonAleatorio>p {
     margin-top: 0.5em;
     margin-bottom: 0.3em;
 
     font-size: 0.9em;
 }
 
-#digimonAleatorio > img {
+#digimonAleatorio>img {
     margin-top: 0em;
 
     width: 80%;
@@ -271,7 +281,7 @@ button {
 #card>a>div>img {
     position: absolute;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 
     top: 0;
     left: 0;
@@ -293,7 +303,7 @@ button {
     text-align: center;
 }
 
-#card > a > p:first-of-type {
+#card>a>p:first-of-type {
     font-size: 0.85em;
 
     margin-top: 0.2em;
@@ -302,6 +312,8 @@ button {
 }
 
 #botonInput {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
     margin-top: 1em;
@@ -314,7 +326,7 @@ button {
     width: 15em;
 }
 
-#sobreMi > article:first-of-type {
+#sobreMi>article:first-of-type {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -322,7 +334,7 @@ button {
     gap: 1em;
 }
 
-#sobreMi > article:first-of-type > img {
+#sobreMi>article:first-of-type>img {
     width: 20em;
 }
 
@@ -351,7 +363,7 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
- }
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
@@ -360,7 +372,7 @@ button {
         justify-content: space-between;
     }
 
-    nav > a {
+    nav>a {
         text-align: center;
     }
 
@@ -377,7 +389,7 @@ button {
 
     }
 
-    header > h3 {
+    header>h3 {
         visibility: hidden;
     }
 
@@ -389,12 +401,16 @@ button {
     #card {
         width: 100%;
 
+        height: -webkit-fit-content;
+
+        height: -moz-fit-content;
+
         height: fit-content;
 
         margin-bottom: 0.5em;
     }
 
-    #card > a > div {
+    #card>a>div {
         display: flex;
         flex-direction: row-reverse;
 
@@ -406,13 +422,17 @@ button {
         margin: 0;
     }
 
-    #card > a > p:first-of-type {
+    #card>a>p:first-of-type {
         margin: 0;
         margin-left: auto;
 
         padding: 0;
         padding-left: 1em;
         padding-right: 0.3em;
+
+        width: -webkit-fit-content;
+
+        width: -moz-fit-content;
 
         width: fit-content;
 
@@ -421,23 +441,23 @@ button {
         border-radius: 0 0 0 2em;
 
         background-color: var(--contraste-fondo);
-     }
+    }
 
-     #card > a > p:last-of-type {
+    #card>a>p:last-of-type {
         margin: 0;
         margin-right: 0.3em;
         margin-left: 0.3em;
         margin-bottom: 1.5em;
         padding: 0;
-     }
+    }
 
-    #card > a > div > img {
+    #card>a>div>img {
         position: initial;
         -o-object-fit: none;
-            object-fit: none;
-        
+        object-fit: none;
+
         z-index: 1;
-        
+
         border-bottom: 0.3em solid var(--contraste);
         border-right: 0.3em solid var(--contraste);
 
@@ -448,25 +468,27 @@ button {
 
         opacity: 1;
     }
-     
-     #card > a > div > h1 {
+
+    #card>a>div>h1 {
         padding-top: 1em;
         margin-left: 0.3em;
         margin-right: 0.3em;
-     }
+    }
 
-     #sobreMi > article:first-of-type {
+    #sobreMi>article:first-of-type {
         display: flex;
         flex-direction: column;
     }
-    
-    #sobreMi > article:first-of-type > img {
+
+    #sobreMi>article:first-of-type>img {
         width: 90%;
         margin-bottom: 0.3em;
     }
 
     #cookies {
         width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
 
         border-radius: 0;
@@ -486,14 +508,14 @@ button {
 
     nav {
         flex-wrap: nowrap;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     main {
         grid-area: 3 / 1 / 3 / 3;
     }
 
-    h2 ~ form {
+    h2~form {
         margin: 0 auto;
     }
 
@@ -503,16 +525,18 @@ button {
         width: 20em;
     }
 
-    h2 ~ #card {
+    h2~#card {
         margin: 0 auto;
     }
 
     #cookies {
         width: 70%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
 
     #overlay {
         background-color: rgba(0, 0, 0, 0.4);
-     }
+    }
 }
