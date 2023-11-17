@@ -1,0 +1,67 @@
+* {
+    color: black !important;
+    background-color: transparent !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+    margin: 0;
+
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    grid-area: 2 / 1 / auto / 3;
+
+    border: none;
+}
+
+form {
+    border-color: black;
+}
+
+input {
+    border-color: black;
+}
+
+aside {
+    display: none;
+}
+
+article img {
+    border-color: black;
+}
+
+/* !css de IDs */
+#card {
+    border-color: black;
+}
+
+#card>a>div {
+    border-color: black;
+}
+
+#card>a>div>img {
+    border-color: black;
+}
+
+#card>a>p:first-of-type {
+    border-color: black;
+}
+
+#botonInput {
+    border-color: black;
+}

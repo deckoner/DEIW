@@ -7,7 +7,7 @@
     --contraste: #c3d587;
 }
 
-/* !Animacion de los a del nav */
+/* !Transicion de los a del nav */
 nav {
     z-index: 1;
 }
@@ -38,4 +38,22 @@ nav>a::before {
 
 nav>a {
     position: relative;
+}
+
+/* !Transicion de los botones */
+#botonInput {
+    border-color: var(--contraste);
+
+    outline: none;
+
+    text-transform: uppercase;
+
+    transition: all .4s;
+}
+
+#botonInput:hover {
+    color: transparent;
+    background: url("/src/img/flecha.svg") no-repeat var(--primario-dos);
+    background-position: center;
+    background-size: 20%;
 }
