@@ -21,7 +21,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Edu TAS Beginner', Courier, monospace;
 }
 
@@ -497,6 +498,10 @@ button {
 
         left: 0;
         transform: translateX(0);
+    }
+
+    #overlay {
+        background-color: rgba(0, 0, 0, 0.4);
     }
 }
 
