@@ -1,6 +1,9 @@
 * {
     color: black !important;
     background-color: transparent !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition: none !important;
 }
 
 body {
@@ -11,6 +14,7 @@ body {
 
 header {
     margin: 0;
+    margin-bottom: 0.5em;
 
     grid-area: 1 / 1 / 2 / 3;
 }
@@ -43,6 +47,12 @@ aside {
 
 article img {
     border-color: black;
+}
+
+header>h3 {
+    visibility: visible;
+
+    font-size: 1.3em !important;
 }
 
 /* !css de IDs */
