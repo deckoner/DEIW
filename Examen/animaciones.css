@@ -1,0 +1,16 @@
+@keyframes aparecerYdesaparecer {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+nav>img {
+    transition: opacity 1.5s ease-in-out;
+    animation: aparecerYdesaparecer 3s infinite;
+}
