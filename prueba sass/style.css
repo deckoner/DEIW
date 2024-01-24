@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  width: 62.5%;
+}
+
+aside[role=complementary] {
+  width: 31.25%;
+  margin-left: auto;
+}
+
+article {
+  color: #ebe1e6;
+  font-size: 1.2em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2E1F27;
+}
+body header {
+  background-color: #7a5268;
+  padding: 20px;
+}
+body header h1 {
+  color: #ebe1e6;
+}
+body nav ul {
+  list-style: none;
+}
+body nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+body footer {
+  background-color: #7a5268;
+  padding: 20px;
+  color: #ebe1e6;
+}/*# sourceMappingURL=style.css.map */

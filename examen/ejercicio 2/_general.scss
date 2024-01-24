@@ -1,0 +1,8 @@
+@for $i from 1 through 3 {
+   .visión_#{$i} {
+     font-family: nth(obtenerValores($i), 1);
+     font-size: #{nth(obtenerValores($i), 2)}em;
+     background-color: map-get($colores-fondo, $i);
+     color: map-get($colores-letra, $i);
+   }
+  }

@@ -1,0 +1,46 @@
+@use "sass:math";
+@import 'variables';
+@import 'mixins';
+
+.container {
+ display: flex;
+}
+
+article[role="main"] {
+ width: math.div(600px, 960px) * 100%;
+}
+
+aside[role="complementary"] {
+ width: math.div(300px, 960px) * 100%;
+ margin-left: auto;
+}
+article {
+ @include estilo-de-texto($color-terciario, 1.2em);
+}
+    
+body {
+ font-family: $fuente-principal;
+ color: $color-primario;
+
+ header {
+    background-color: $color-secundario;
+    padding: 20px;
+    h1 {
+      color: $color-terciario;
+    }
+ }
+
+ nav ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+ }
+
+ footer {
+    background-color: $color-secundario;
+    padding: 20px;
+    color: $color-terciario;
+ }
+}

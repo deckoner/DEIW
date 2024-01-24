@@ -1,0 +1,11 @@
+@function obtenerValores($parametro: 2) {
+   @if $parametro == 1 {
+      @return map-get($fuentes, 'Franklin Gothic Medium'), map-get($tamaños, 'Franklin Gothic Medium');
+   } @else if $parametro == 2 {
+      @return map-get($fuentes, 'Arial'), map-get($tamaños, 'Arial');
+   } @else if $parametro == 3 {
+      @return map-get($fuentes, 'Impact'), map-get($tamaños, 'Impact');
+   } @else {
+      @error "El parámetro debe ser 1, 2 o 3.";
+   }
+  }
