@@ -59,7 +59,7 @@ header>h1 {
     font-family: 'Edu TAS Beginner', Courier, monospace;
 }
 
-header>h3 {
+header>h2 {
     margin-left: 1em;
     margin-top: 0;
 }
@@ -124,13 +124,13 @@ aside {
     height: fit-content;
 }
 
-aside>article>h3 {
+aside>article>h1 {
     margin-bottom: 0em;
     font-size: 1.4em;
 
 }
 
-aside>article>h4 {
+aside>article>h2 {
     margin-top: 0.3em;
     margin-bottom: 0.1em;
     font-size: 1em;
@@ -390,7 +390,7 @@ button {
 
     }
 
-    header>h3 {
+    header>h2 {
         visibility: hidden;
     }
 
