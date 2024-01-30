@@ -124,13 +124,13 @@ aside {
     height: fit-content;
 }
 
-aside>article>h1 {
+aside>article>h2 {
     margin-bottom: 0em;
     font-size: 1.4em;
 
 }
 
-aside>article>h2 {
+aside>article>h3 {
     margin-top: 0.3em;
     margin-bottom: 0.1em;
     font-size: 1em;
@@ -295,7 +295,7 @@ button {
     z-index: -1;
 }
 
-#card>a>div>h1 {
+#card>a>div>h2 {
     margin: 0;
     padding-top: 0.8em;
 
