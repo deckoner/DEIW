@@ -7,6 +7,7 @@
     --secundario-dos: #3E4008;
     --contraste: #8a9f46;
     --contraste-fondo: #758348;
+    --colorBoton: #4a5768;
 
     --alt-fondo: #897b79;
     --alt-primario-uno: #ebd2e3;
@@ -16,6 +17,7 @@
     --alt-secundario-dos: #6c5a5a;
     --alt-contraste: #4a5768;
     --alt-contraste-fondo: #4d4a49;
+    --alt-colorBoton: #8a9f46;
 }
 
 @font-face {
@@ -25,7 +27,7 @@
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("../font/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("../font/Dislexia.ttf");
 }
 
 h1,
@@ -381,9 +383,15 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("../img/lunaClara.svg");
+    background-color: transparent;
     cursor: pointer;
    }   
+
+.fab > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {

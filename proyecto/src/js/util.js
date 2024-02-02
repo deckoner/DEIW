@@ -111,27 +111,34 @@ function setCookie(cname, cvalue, exdays) {
   });
 
 function modoOscuro() {
+    console.log(document.getElementById('btnOscuro').firstChild.src);
     document.documentElement.style.setProperty('--fondo', '#897b79');
     document.documentElement.style.setProperty('--primario-uno', '#ebd2e3');
     document.documentElement.style.setProperty('--primario-uno-trans', '#ebd2e389');
     document.documentElement.style.setProperty('--primario-dos', '#c0a8af');
     document.documentElement.style.setProperty('--secundario-uno', '#fff');
     document.documentElement.style.setProperty('--secundario-dos', '#6c5a5a');
-    document.documentElement.style.setProperty('--contraste', '#4a5768');
+    document.documentElement.style.setProperty('--contraste', '#fff');
     document.documentElement.style.setProperty('--contraste-fondo', '#4d4a49');
+    document.documentElement.style.setProperty('--colorBoton', '#ffffff00');
 
     let url = "/articulos/Terriermon_el_estoico.html";
     let partes = url.split("/");
     let directorio = partes.slice(0, 2).join("/");
 
     if (directorio == "/articulos") {
+        let img = document.querySelector('#btnOscuro img');
+        img.src = "../src/img/lunaOscura.svg";
         document.body.style.backgroundImage = "url('../src/img/fondoAlt.webp')";
     } else {
+        let img = document.querySelector('#btnOscuro img');
+        img.src = "src/img/lunaOscura.svg";
         document.body.style.backgroundImage = "url('src/img/fondoAlt.webp')";
     }
 }
 
 function modoClaro() {
+    console.log(document.getElementById('btnOscuro').firstChild.src);
     document.documentElement.style.setProperty('--fondo', '#F2EBC4');
     document.documentElement.style.setProperty('--primario-uno', '#BDBF75');
     document.documentElement.style.setProperty('--primario-uno-trans', '#bdbf7589');
@@ -140,14 +147,19 @@ function modoClaro() {
     document.documentElement.style.setProperty('--secundario-dos', '#3E4008');
     document.documentElement.style.setProperty('--contraste', '#8a9f46');
     document.documentElement.style.setProperty('--contraste-fondo', '#758348');
+    document.documentElement.style.setProperty('--colorBoton', '#ffffff00');
 
     let url = "/articulos/Terriermon_el_estoico.html";
     let partes = url.split("/");
     let directorio = partes.slice(0, 2).join("/");
 
     if (directorio == "/articulos") {
+        let img = document.querySelector('#btnOscuro img');
+        img.src = "../src/img/lunaClara.svg";
         document.body.style.backgroundImage = "url('../src/img/fondo.webp')";
     } else {
+        let img = document.querySelector('#btnOscuro img');
+        img.src = "src/img/lunaClara.svg";
         document.body.style.backgroundImage = "url('src/img/fondo.webp')";
     }
 }
