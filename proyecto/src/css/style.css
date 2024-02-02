@@ -7,6 +7,15 @@
     --secundario-dos: #3E4008;
     --contraste: #8a9f46;
     --contraste-fondo: #758348;
+
+    --alt-fondo: #897b79;
+    --alt-primario-uno: #ebd2e3;
+    --alt-primario-uno-trans: #ebd2e389;
+    --alt-primario-dos: #c0a8af;
+    --alt-secundario-uno: #fff;
+    --alt-secundario-dos: #6c5a5a;
+    --alt-contraste: #4a5768;
+    --alt-contraste-fondo: #4d4a49;
 }
 
 @font-face {
@@ -33,7 +42,6 @@ body {
     gap: 1em;
 
     background-color: var(--fondo);
-    color: var(--secundario-dos);
 
     font-size: 1.2em;
 
@@ -365,6 +373,17 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
 }
+
+.fab {
+    position: fixed;
+    top: 10px;
+    right: 10px;    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/lunaClara.svg");
+    cursor: pointer;
+   }   
 
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {

@@ -5,6 +5,7 @@ const listaDigimones = [
     "Tentomon",
     "Lopmon",
 ];
+
 const direccionPrincipal = window.location.origin;
 
 function digimonFavorito() {
@@ -108,3 +109,64 @@ function setCookie(cname, cvalue, exdays) {
         setCookie('cookiesAceptadas', 'false', 1);
     });
   });
+
+function modoOscuro() {
+    document.documentElement.style.setProperty('--fondo', '#897b79');
+    document.documentElement.style.setProperty('--primario-uno', '#ebd2e3');
+    document.documentElement.style.setProperty('--primario-uno-trans', '#ebd2e389');
+    document.documentElement.style.setProperty('--primario-dos', '#c0a8af');
+    document.documentElement.style.setProperty('--secundario-uno', '#fff');
+    document.documentElement.style.setProperty('--secundario-dos', '#6c5a5a');
+    document.documentElement.style.setProperty('--contraste', '#4a5768');
+    document.documentElement.style.setProperty('--contraste-fondo', '#4d4a49');
+
+    let url = "/articulos/Terriermon_el_estoico.html";
+    let partes = url.split("/");
+    let directorio = partes.slice(0, 2).join("/");
+
+    if (directorio == "/articulos") {
+        document.body.style.backgroundImage = "url('../src/img/fondoAlt.webp')";
+    } else {
+        document.body.style.backgroundImage = "url('src/img/fondoAlt.webp')";
+    }
+}
+
+function modoClaro() {
+    document.documentElement.style.setProperty('--fondo', '#F2EBC4');
+    document.documentElement.style.setProperty('--primario-uno', '#BDBF75');
+    document.documentElement.style.setProperty('--primario-uno-trans', '#bdbf7589');
+    document.documentElement.style.setProperty('--primario-dos', '#D9D5A3');
+    document.documentElement.style.setProperty('--secundario-uno', '#59543B');
+    document.documentElement.style.setProperty('--secundario-dos', '#3E4008');
+    document.documentElement.style.setProperty('--contraste', '#8a9f46');
+    document.documentElement.style.setProperty('--contraste-fondo', '#758348');
+
+    let url = "/articulos/Terriermon_el_estoico.html";
+    let partes = url.split("/");
+    let directorio = partes.slice(0, 2).join("/");
+
+    if (directorio == "/articulos") {
+        document.body.style.backgroundImage = "url('../src/img/fondo.webp')";
+    } else {
+        document.body.style.backgroundImage = "url('src/img/fondo.webp')";
+    }
+}
+
+window.addEventListener('load', function() {
+    document.getElementById('btnOscuro').addEventListener('click', function() {
+        let oscuro = !JSON.parse(localStorage.getItem('oscuro'));
+        localStorage.setItem('oscuro', JSON.stringify(oscuro));
+
+        if (oscuro) {
+            modoOscuro();
+        } else {
+            modoClaro();
+        }
+    });
+
+    let oscuro = JSON.parse(localStorage.getItem('oscuro')) || false;
+
+    if (oscuro) {
+        modoOscuro();
+    }
+});
