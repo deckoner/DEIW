@@ -530,6 +530,10 @@ button {
     #overlay {
         background-color: rgba(0, 0, 0, 0.4);
     }
+
+    .cookie {
+        display: none;
+    }
 }
 
 /* Media query para tablets */
@@ -570,5 +574,9 @@ button {
 
     #overlay {
         background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .cookie {
+        display: none;
     }
 }
