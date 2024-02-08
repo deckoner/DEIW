@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /politicas.html
+Disallow: /src/
+
+Sitemap: https://el-terriermon-filosofo.netlify.app/Sitemap.xml
